@@ -1,0 +1,11 @@
+Classes:
+
+ConfigFile
+TimeSliceFile
+TimeSlice
+VideoSegementFile
+
+Operations:
+
+trim
+join
