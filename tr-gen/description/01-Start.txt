@@ -1,0 +1,26 @@
+I am going script a small tool today, to generate HTML tables. Generating HTML tables can be quite a task, if you consider everything, like, styles, headers, etc. This tool might go further and manage repetitive content, or, ordered content.
+
+I am also thinking of adding support for CSS libraries, like, Bootstrap.
+
+I know Python, BASH, a little bit of Powershell, C, etc. Is there anything new in the scripting world? Let me check.
+
+One lookup on the Internet, and I got reminded of the fact that I know some of JS as well. I am going to go with that.
+
+I am going to go with the fast approach. I am not going to take time and learn and put in extra work on some things.
+
+I am going to start.
+
+I am rather less experienced with JS, so I might have to search for some basics.
+
+Some code has been written. The code accepts the command line parameters for row and column count of the table, and, then constructs the HTML table code, using 2 for loops.
+
+I have tested the code. It does generate the table code, but, upon viewing it in the browser, the table does not show.
+
+The table showed, after a bit of looking around, the debug output of the argument logging was going into the html, upon removing it, the table showed. The border is needed to see the cells clearly.
+
+I have added code to add html, head, style tags to the output. It is working.
+
+The primary aim of this exercise has been fulfilled. It is time to stop, but, not before committing the code to git and pushing the code to GitHub.
+
+I am done.
+ 
