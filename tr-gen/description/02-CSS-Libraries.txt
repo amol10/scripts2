@@ -1,0 +1,25 @@
+I am going to continue on the utility which I started making yesterday. It is a utility to generate HTML code for tables.
+
+Like I had mentioned yesterday, Bootstrap is something I can add to this utility. Let me add code for it.
+
+I have added the code to read the command line argument to indicate the choice for including an external CSS library. In the absence of this argument, the simple table style which is already included in the code will be used.
+
+The code works, upto the point of loading the external CSS library. The style is not getting applied.
+
+I may have to look up a little bit on the Bootstrap website to see what class names to add, to the table style.
+
+The code is working. Upon giving a 'b' as the third argument on the command line, the generated HTML table has the Bootstrap style, otherwise, it has the simple included style.
+
+I am going to commit the code to git now.
+
+I have added some more style to the Bootstrap class attribute value, I have added width and border.
+
+Now, I am going to add one more CSS library.
+
+I added the Tailwind CSS library, but, it may not be free. So, it won't work.
+
+I have added another library for CSS, Bulma. It is working.
+
+I am going to commit the code now.
+
+I am going to stop now. There are more possibilities here, like, adding an index column, for numbering, and, having a stiped table, with the alternate rows having the same color.
