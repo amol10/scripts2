@@ -11,7 +11,13 @@ css_library_url = "";
 css_class = "";
 switch (css_library){
     case 'b': css_library_url = "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr\" crossorigin=\"anonymous\">";
-        css_class = "table";
+        css_class = "table w-50 table-bordered";
+    
+    case 't': css_library_url = "<script src=\"https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4\"></script>";
+        css_class = "pqp pqq pqs";
+
+    case 'u': css_library_url = "<link href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css\" rel=\"stylesheet\">";
+        css_class = "table is-bordered";
     //default: 
 }
 
