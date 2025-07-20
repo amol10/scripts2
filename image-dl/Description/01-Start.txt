@@ -1,0 +1,15 @@
+I have seen a feature on GitHub, GitHub Copilot, it is described as 'Code 55% faster with GitHub Copilot'. I am going to try this.
+
+I have tried it. It seems good, given a line of description, it gave me the python code. The code seems correct.
+
+I need the command line argument option to test this on the command line. Let me modify the description and see if I can get an update of the code. It should be possible.
+
+The modified description seems to have generated the needed code. Now, let me test it.
+
+How to get the code on the local machine is a question. The code is not committed to the GitHub repo. There is no option to do so on the Copilot screen. So, let me download the code and try it.
+
+I have downloaded the code and have tested it. The first URL failed. The second one worked, and, it downloaded the image.
+
+So, this Copilot feature seems to be a good one. It may be a good idea to test it further.
+
+I am going to commit the code now.
