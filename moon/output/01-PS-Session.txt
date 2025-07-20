@@ -1,0 +1,946 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\amole> Start-Process photos.exe
+Start-Process : This command cannot be run due to the error: The system cannot find the file specified.
+At line:1 char:1
++ Start-Process photos.exe
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+PS C:\Users\amole> dir C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe
+dir : Cannot find path 'C:\Program' because it does not exist.
+At line:1 char:1
++ dir C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Program:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\amole> dir "C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe"
+
+
+    Directory: C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15-07-2025     15:03                AppxMetadata
+d-----        15-07-2025     15:03                Assets
+d-----        15-07-2025     15:03                DesignerLib
+d-----        15-07-2025     15:03                ImageEditorLib
+d-----        15-07-2025     15:03                ImageLib
+d-----        15-07-2025     15:03                Lightbox
+d-----        15-07-2025     15:03                PerceptiveShell
+d-----        15-07-2025     15:03                Photos.App
+d-----        15-07-2025     15:03                Photos.App.Collection
+d-----        15-07-2025     15:03                Photos.Consent
+d-----        15-07-2025     15:03                Photos.Controls
+d-----        15-07-2025     15:03                Photos.Controls.Maps
+d-----        15-07-2025     15:03                Photos.Controls.Media
+d-----        15-07-2025     15:03                Photos.Controls.Ocr
+d-----        15-07-2025     15:03                Photos.Controls.Pill
+d-----        15-07-2025     15:03                Photos.Controls.Timeline
+d-----        15-07-2025     15:03                PhotosManager
+d-----        15-07-2025     15:03                runtimes
+d-----        15-07-2025     15:03                Slideshow
+d-----        15-07-2025     15:03                Strings
+-a----        15-07-2025     15:03        1162748 AppxBlockMap.xml
+-a----        15-07-2025     15:03          77648 AppxManifest.xml
+-a----        15-07-2025     15:03          12255 AppxSignature.p7x
+-a----        15-07-2025     15:27        1161256 Azure.Core.dll
+-a----        26-06-2025     15:43         312584 clretwrc.dll
+-a----        26-06-2025     15:43         674088 clrgc.dll
+-a----        26-06-2025     15:43        1945352 clrjit.dll
+-a----        15-07-2025     15:27          16802 CodeSignSummary-2cfcee34-15a9-4823-a094-25c6e109b781.md
+-a----        15-07-2025     15:27          59416 CommunityToolkit.Common.dll
+-a----        15-07-2025     15:27         170024 CommunityToolkit.Diagnostics.dll
+-a----        15-07-2025     15:27         284704 CommunityToolkit.Mvvm.dll
+-a----        15-07-2025     15:27         423976 CommunityToolkit.WinUI.Animations.dll
+-a----        29-10-2024     15:49            760 CommunityToolkit.WinUI.Animations.pri
+-a----        15-07-2025     15:27          88104 CommunityToolkit.WinUI.Behaviors.dll
+-a----        10-03-2025     21:11            752 CommunityToolkit.WinUI.Behaviors.pri
+-a----        15-07-2025     15:27         145440 CommunityToolkit.WinUI.Controls.Primitives.dll
+-a----        29-10-2024     15:49            792 CommunityToolkit.WinUI.Controls.Primitives.pri
+-a----        15-07-2025     15:27         186440 CommunityToolkit.WinUI.Controls.SettingsControls.dll
+-a----        10-03-2025     21:11          36200 CommunityToolkit.WinUI.Controls.SettingsControls.pri
+-a----        15-07-2025     15:27         112696 CommunityToolkit.WinUI.Controls.Sizers.dll
+-a----        29-10-2024     15:49           5848 CommunityToolkit.WinUI.Controls.Sizers.pri
+-a----        15-07-2025     15:27          47144 CommunityToolkit.WinUI.Converters.dll
+-a----        29-10-2024     15:49            760 CommunityToolkit.WinUI.Converters.pri
+-a----        15-07-2025     15:27         272416 CommunityToolkit.WinUI.Extensions.dll
+-a----        29-10-2024     15:49            760 CommunityToolkit.WinUI.Extensions.pri
+-a----        15-07-2025     15:27         100384 CommunityToolkit.WinUI.Helpers.dll
+-a----        29-10-2024     15:49            744 CommunityToolkit.WinUI.Helpers.pri
+-a----        15-07-2025     15:27          63528 CommunityToolkit.WinUI.Triggers.dll
+-a----        29-10-2024     15:49            752 CommunityToolkit.WinUI.Triggers.pri
+-a----        26-06-2025     15:44        4815640 coreclr.dll
+-a----        15-07-2025     15:27         140872 DataMigrationBackgroundService.dll
+-a----        29-10-2024     15:49            744 DataMigrationBackgroundService.pri
+-a----        15-07-2025     15:27           2048 DataMigrationBackgroundService.winmd
+-a----        15-07-2025     15:27         507424 DesignerLib.dll
+-a----        17-12-2024     19:34           2432 DesignerLib.pri
+-a----        15-07-2025     15:27           8192 DesignerLib.winmd
+-a----        29-10-2024     15:49           4152 dnne.h
+-a----        29-10-2024     15:49           2239 FilmicEffect.cso
+-a----        29-10-2024     15:49           1799 FilmicEffect.hlsl
+-a----        29-10-2024     15:49          15585 FilmicEffectShader.h
+-a----        26-06-2025     15:47         370960 hostfxr.dll
+-a----        26-06-2025     15:47         386824 hostpolicy.dll
+-a----        15-07-2025     15:27         939560 ImageEditorLib.dll
+-a----        15-07-2025     15:27        3363336 ImageEditorLib.pri
+-a----        15-07-2025     15:27          15872 ImageEditorLib.winmd
+-a----        15-07-2025     15:28         599600 ImageLib.dll
+-a----        29-10-2024     15:49           1880 ImageLib.pri
+-a----        15-07-2025     15:28           7168 ImageLib.winmd
+-a----        15-07-2025     15:28        4758600 libcrypto-3-x64.dll
+-a----        15-07-2025     15:29       12477976 Lightbox.dll
+-a----        15-07-2025     15:29        2150272 Lightbox.pri
+-a----        15-07-2025     15:29         247296 Lightbox.winmd
+-a----        15-07-2025     15:46      302371110 mager.onnxe
+-a----        15-07-2025     15:46          38952 Microsoft.Apps.MediaFeaturesInformation.dll
+-a----        17-12-2024     19:34          16000 Microsoft.Bcl.AsyncInterfaces.dll
+-a----        27-06-2025     15:55         993560 Microsoft.CSharp.dll
+-a----        28-01-2025     20:30        2195504 Microsoft.DiaSymReader.Native.amd64.dll
+-a----        15-07-2025     15:46         141344 Microsoft.Extensions.DependencyInjection.Abstractions.dll
+-a----        15-07-2025     15:46         210976 Microsoft.Extensions.DependencyInjection.dll
+-a----        15-07-2025     15:46      147290144 Microsoft.Graph.Beta.dll
+-a----        15-07-2025     15:46         346144 Microsoft.Graph.Core.dll
+-a----        29-10-2024     16:00        1659328 Microsoft.Graphics.Canvas.dll
+-a----        15-07-2025     15:46          34848 Microsoft.IdentityModel.Abstractions.dll
+-a----        15-07-2025     15:46         366624 Microsoft.IdentityModel.JsonWebTokens.dll
+-a----        15-07-2025     15:46          71712 Microsoft.IdentityModel.Logging.dll
+-a----        15-07-2025     15:46          83992 Microsoft.IdentityModel.Protocols.dll
+-a----        15-07-2025     15:46         231456 Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+-a----        15-07-2025     15:47         706616 Microsoft.IdentityModel.Tokens.dll
+-a----        15-07-2025     15:47          67616 Microsoft.IdentityModel.Validators.dll
+-a----        17-04-2025     20:51         328224 Microsoft.ImageCreation.dll
+-a----        15-07-2025     15:47        2570280 Microsoft.InteractiveExperiences.Projection.dll
+-a----        15-07-2025     15:47         223264 Microsoft.Kiota.Abstractions.dll
+-a----        15-07-2025     15:47          38944 Microsoft.Kiota.Authentication.Azure.dll
+-a----        15-07-2025     15:47         247840 Microsoft.Kiota.Http.HttpClientLibrary.dll
+-a----        15-07-2025     15:47          71712 Microsoft.Kiota.Serialization.Form.dll
+-a----        15-07-2025     15:47         149536 Microsoft.Kiota.Serialization.Json.dll
+-a----        15-07-2025     15:47          34848 Microsoft.Kiota.Serialization.Multipart.dll
+-a----        15-07-2025     15:47          51232 Microsoft.Kiota.Serialization.Text.dll
+-a----        27-06-2025     15:56        1255688 Microsoft.VisualBasic.Core.dll
+-a----        27-06-2025     15:56          17720 Microsoft.VisualBasic.dll
+-a----        27-06-2025     15:56          15632 Microsoft.Win32.Primitives.dll
+-a----        27-06-2025     15:56         121112 Microsoft.Win32.Registry.dll
+-a----        15-07-2025     15:47         112672 Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+-a----        15-07-2025     15:47         145440 Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+-a----        15-07-2025     15:47          92192 Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+-a----        15-07-2025     15:47         100384 Microsoft.Windows.AppLifecycle.Projection.dll
+-a----        15-07-2025     15:47         141344 Microsoft.Windows.AppNotifications.Builder.Projection.dll
+-a----        15-07-2025     15:47         129056 Microsoft.Windows.AppNotifications.Projection.dll
+-a----        15-07-2025     15:47         227384 Microsoft.Windows.Management.Deployment.Projection.dll
+-a----        15-07-2025     15:47         112672 Microsoft.Windows.PushNotifications.Projection.dll
+-a----        29-10-2024     16:00       22716448 Microsoft.Windows.SDK.NET.dll
+-a----        15-07-2025     15:47          71712 Microsoft.Windows.Security.AccessControl.Projection.dll
+-a----        15-07-2025     15:47          92192 Microsoft.Windows.System.Power.Projection.dll
+-a----        15-07-2025     15:47          79928 Microsoft.Windows.System.Projection.dll
+-a----        15-07-2025     15:47         321568 Microsoft.Windows.Widgets.Projection.dll
+-a----        29-10-2024     15:44         391240 Microsoft.WindowsAppRuntime.Bootstrap.dll
+-a----        15-07-2025     15:47          30752 Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+-a----        15-07-2025     15:47       14211104 Microsoft.WinUI.dll
+-a----        15-07-2025     15:47          92192 Microsoft.Xaml.Interactions.dll
+-a----        29-10-2024     16:00          21536 Microsoft.Xaml.Interactions.pri
+-a----        15-07-2025     15:47          51232 Microsoft.Xaml.Interactivity.dll
+-a----        29-10-2024     16:00           7264 Microsoft.Xaml.Interactivity.pri
+-a----        26-06-2025     15:48        1357880 mscordaccore.dll
+-a----        26-06-2025     15:48        1357880 mscordaccore_amd64_amd64_9.0.625.26613.dll
+-a----        26-06-2025     15:48        1237008 mscordbi.dll
+-a----        27-06-2025     15:56          60200 mscorlib.dll
+-a----        26-06-2025     15:48         135944 mscorrc.dll
+-a----        04-05-2025     23:06         529480 msquic.dll
+-a----        27-06-2025     15:56         101176 netstandard.dll
+-a----        15-07-2025     15:47         174136 OneDrive.dll
+-a----        29-10-2024     16:00            656 OneDrive.pri
+-a----        15-07-2025     15:47         141352 OneDriveUI.dll
+-a----        29-10-2024     16:00            664 OneDriveUI.pri
+-a----        10-05-2025     21:03       42703832 oneocr.dll
+-a----        10-05-2025     21:04       58453785 oneocr.onemodel
+-a----        10-05-2025     21:05       13976536 onnxruntime.dll
+-a----        15-07-2025     15:47        1163296 Photos.AIServices.CppWinRT.dll
+-a----        29-10-2024     16:03            728 Photos.AIServices.CppWinRT.pri
+-a----        15-07-2025     15:47         174112 Photos.AIServices.CsWinRT.dll
+-a----        10-05-2025     21:05            728 Photos.AIServices.CsWinRT.pri
+-a----        15-07-2025     15:47          12800 Photos.AIServices.winmd
+-a----        15-07-2025     15:47          86560 Photos.AIUtils.dll
+-a----        15-07-2025     15:47         550984 Photos.App.Collection.dll
+-a----        15-07-2025     15:47          28890 Photos.App.Collection.NativeHost.deps.json
+-a----        15-07-2025     15:47          30752 Photos.App.Collection.NativeHost.dll
+-a----        15-07-2025     15:47            428 Photos.App.Collection.NativeHost.runtimeconfig.json
+-a----        15-07-2025     15:47        1198112 Photos.App.Collection.NativeHostNE.dll
+-a----        29-10-2024     16:03           2544 Photos.App.Collection.NativeHostNE.h
+-a----        15-07-2025     15:47           3404 Photos.App.Collection.NativeHostNE.lib
+-a----        15-07-2025     15:48        7168312 Photos.App.Collection.pri
+-a----        15-07-2025     15:48           3584 Photos.App.Collection.winmd
+-a----        15-07-2025     15:48        2691624 Photos.App.Container.dll
+-a----        10-05-2025     21:05           8112 Photos.App.Container.pri
+-a----        15-07-2025     15:48           7680 Photos.App.winmd
+-a----        15-07-2025     15:48         199712 Photos.Authentication.CppWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Authentication.CppWinRT.pri
+-a----        15-07-2025     15:48         124960 Photos.Authentication.CsWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Authentication.CsWinRT.pri
+-a----        15-07-2025     15:48         635952 Photos.Authentication.dll
+-a----        15-07-2025     15:48           6656 Photos.Authentication.winmd
+-a----        15-07-2025     15:48         107048 Photos.AutoPlay.exe
+-a----        15-07-2025     15:48          34872 Photos.Collection.Models.dll
+-a----        15-07-2025     15:48          14368 Photos.Collection.Models.Interfaces.dll
+-a----        29-10-2024     16:03            768 Photos.Collection.Models.Interfaces.pri
+-a----        29-10-2024     16:03            720 Photos.Collection.Models.pri
+-a----        15-07-2025     15:48          60960 Photos.Configuration.CppWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Configuration.CppWinRT.pri
+-a----        15-07-2025     15:48          91192 Photos.Configuration.dll
+-a----        15-07-2025     15:48           5120 Photos.Configuration.winmd
+-a----        15-07-2025     15:48         436264 Photos.Consent.dll
+-a----        15-07-2025     15:48         262464 Photos.Consent.pri
+-a----        15-07-2025     15:48           4608 Photos.Consent.winmd
+-a----        15-07-2025     15:48        1954360 Photos.Controls.dll
+-a----        15-07-2025     15:48         549960 Photos.Controls.Maps.dll
+-a----        29-10-2024     16:03           2072 Photos.Controls.Maps.pri
+-a----        15-07-2025     15:48           6144 Photos.Controls.Maps.winmd
+-a----        15-07-2025     15:48         354848 Photos.Controls.Media.dll
+-a----        10-05-2025     21:05          15128 Photos.Controls.Media.pri
+-a----        15-07-2025     15:48           5632 Photos.Controls.Media.winmd
+-a----        15-07-2025     15:48         547896 Photos.Controls.Ocr.dll
+-a----        11-03-2025     00:51          19528 Photos.Controls.Ocr.pri
+-a----        15-07-2025     15:48           6656 Photos.Controls.Ocr.winmd
+-a----        15-07-2025     15:48          92192 Photos.Controls.Pill.dll
+-a----        29-10-2024     16:03          13992 Photos.Controls.Pill.pri
+-a----        11-03-2025     00:51          34192 Photos.Controls.pri
+-a----        15-07-2025     15:48         235552 Photos.Controls.Timeline.dll
+-a----        15-07-2025     15:48        6751048 Photos.Controls.Timeline.pri
+-a----        15-07-2025     15:48          11776 Photos.Controls.winmd
+-a----        15-07-2025     15:48        1334296 Photos.Database.dll
+-a----        15-07-2025     15:48          31800 Photos.Database.Models.dll
+-a----        17-12-2024     19:36            688 Photos.Database.pri
+-a----        15-07-2025     15:48         112200 Photos.exe
+-a----        15-07-2025     15:48         575544 Photos.Experimentation.dll
+-a----        15-07-2025     15:48          11264 Photos.Experimentation.winmd
+-a----        15-07-2025     15:48          43040 Photos.Extensions.dll
+-a----        29-10-2024     16:03            696 Photos.Extensions.pri
+-a----        15-07-2025     15:48         323128 Photos.ImageEmbedding.dll
+-a----        15-07-2025     15:48            712 Photos.ImageEmbedding.pri
+-a----        15-07-2025     15:48          68168 Photos.Logging.CppWinRT.dll
+-a----        29-10-2024     16:03            720 Photos.Logging.CppWinRT.pri
+-a----        15-07-2025     15:48          92192 Photos.Logging.CsWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Logging.CsWinRT.pri
+-a----        15-07-2025     15:48         184392 Photos.Logging.dll
+-a----        15-07-2025     15:48           2560 Photos.Logging.winmd
+-a----        15-07-2025     15:48         433184 Photos.Models.CppWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Models.CppWinRT.pri
+-a----        15-07-2025     15:48         276512 Photos.Models.CsWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Models.CsWinRT.pri
+-a----        15-07-2025     15:48          44584 Photos.Models.dll
+-a----        15-07-2025     15:48          14880 Photos.Models.Interfaces.dll
+-a----        29-10-2024     16:03            720 Photos.Models.Interfaces.pri
+-a----        15-07-2025     15:48          14336 Photos.Models.winmd
+-a----        15-07-2025     15:48         320584 Photos.Ocr.dll
+-a----        29-10-2024     16:03            664 Photos.Ocr.pri
+-a----        15-07-2025     15:48         108584 Photos.Settings.dll
+-a----        11-03-2025     00:51            688 Photos.Settings.pri
+-a----        15-07-2025     15:48         226336 Photos.ShellExtension.dll
+-a----        15-07-2025     15:48         677920 Photos.Telemetry.CsWinRT.dll
+-a----        29-10-2024     16:03            720 Photos.Telemetry.CsWinRT.pri
+-a----        15-07-2025     15:48         950816 Photos.Telemetry.dll
+-a----        29-10-2024     16:03            688 Photos.Telemetry.pri
+-a----        15-07-2025     15:48          51200 Photos.Telemetry.winmd
+-a----        10-05-2025     21:05            696 Photos.Thumbnails.pri
+-a----        15-07-2025     15:48         129056 Photos.UserActivities.dll
+-a----        15-07-2025     15:48         639016 Photos.Utils.CppWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Utils.CppWinRT.pri
+-a----        15-07-2025     15:48         419872 Photos.Utils.CsWinRT.dll
+-a----        11-03-2025     00:51            704 Photos.Utils.CsWinRT.pri
+-a----        15-07-2025     15:48        1301024 Photos.Utils.dll
+-a----        29-10-2024     16:03            672 Photos.Utils.pri
+-a----        15-07-2025     15:48          28672 Photos.Utils.winmd
+-a----        15-07-2025     15:48         359496 Photos.Windowing.dll
+-a----        29-10-2024     16:03            688 Photos.Windowing.pri
+-a----        15-07-2025     15:48         153632 Photos.Windowing.Projection.dll
+-a----        29-10-2024     16:03            736 Photos.Windowing.Projection.pri
+-a----        15-07-2025     15:48           7168 Photos.Windowing.winmd
+-a----        15-07-2025     15:48        4272680 PhotosCore.dll
+-a----        29-10-2024     16:03            664 PhotosCore.pri
+-a----        15-07-2025     15:48        4573240 PhotosCsProjection.dll
+-a----        29-10-2024     16:03            696 PhotosCsProjection.pri
+-a----        15-07-2025     15:49        6645792 PhotosManager.dll
+-a----        15-07-2025     15:49        7230296 PhotosManager.pri
+-a----        15-07-2025     15:49         856096 PhotosServiceSdk.dll
+-a----        29-10-2024     16:03            688 PhotosServiceSdk.pri
+-a----        15-07-2025     15:49           2048 PhotosServiceSdk.winmd
+-a----        15-07-2025     15:49        2405432 provenancesdk.dll
+-a----        15-07-2025     15:49       17008936 resources.pri
+-a----        15-07-2025     15:49         841256 RuntimeConfiguration.dll
+-a----        29-10-2024     16:04       23070428 seg.onnxe
+-a----        15-07-2025     15:49        1312328 SharedServices.dll
+-a----        11-03-2025     00:53         366472 SharedServices.pri
+-a----        15-07-2025     15:49          31232 SharedServices.winmd
+-a----        15-07-2025     15:51        5434400 Slideshow.dll
+-a----        15-07-2025     15:51         536912 Slideshow.pri
+-a----        15-07-2025     15:51          25088 Slideshow.winmd
+-a----        15-07-2025     15:51        1292320 sqlite3.dll
+-a----        15-07-2025     15:51          47136 Std.UriTemplate.dll
+-a----        27-06-2025     15:58          15632 System.AppContext.dll
+-a----        27-06-2025     15:58          15640 System.Buffers.dll
+-a----        15-07-2025     15:51          55328 System.ClientModel.dll
+-a----        27-06-2025     15:58         293160 System.Collections.Concurrent.dll
+-a----        27-06-2025     15:58         334104 System.Collections.dll
+-a----        27-06-2025     15:58         903432 System.Collections.Immutable.dll
+-a----        27-06-2025     15:58         108832 System.Collections.NonGeneric.dll
+-a----        27-06-2025     15:58         104720 System.Collections.Specialized.dll
+-a----        27-06-2025     15:58         198920 System.ComponentModel.Annotations.dll
+-a----        27-06-2025     15:58          17200 System.ComponentModel.DataAnnotations.dll
+-a----        27-06-2025     15:58          30984 System.ComponentModel.dll
+-a----        27-06-2025     15:58          47368 System.ComponentModel.EventBasedAsync.dll
+-a----        27-06-2025     15:58          80168 System.ComponentModel.Primitives.dll
+-a----        27-06-2025     15:58         772360 System.ComponentModel.TypeConverter.dll
+-a----        27-06-2025     15:58          19720 System.Configuration.dll
+-a----        27-06-2025     15:58         174344 System.Console.dll
+-a----        27-06-2025     15:58          23832 System.Core.dll
+-a----        27-06-2025     15:58        2849032 System.Data.Common.dll
+-a----        27-06-2025     15:58          16184 System.Data.DataSetExtensions.dll
+-a----        27-06-2025     15:58          25352 System.Data.dll
+-a----        27-06-2025     15:58          16664 System.Diagnostics.Contracts.dll
+-a----        27-06-2025     15:58          16160 System.Diagnostics.Debug.dll
+-a----        27-06-2025     15:58         452888 System.Diagnostics.DiagnosticSource.dll
+-a----        27-06-2025     15:58          47392 System.Diagnostics.FileVersionInfo.dll
+-a----        27-06-2025     15:58         338184 System.Diagnostics.Process.dll
+-a----        27-06-2025     15:58          47368 System.Diagnostics.StackTrace.dll
+-a----        27-06-2025     15:58          67848 System.Diagnostics.TextWriterTraceListener.dll
+-a----        27-06-2025     15:58          15640 System.Diagnostics.Tools.dll
+-a----        27-06-2025     15:58         145688 System.Diagnostics.TraceSource.dll
+-a----        27-06-2025     15:58          16664 System.Diagnostics.Tracing.dll
+-a----        27-06-2025     15:58          50952 System.dll
+-a----        27-06-2025     15:58          20744 System.Drawing.dll
+-a----        27-06-2025     15:58         137496 System.Drawing.Primitives.dll
+-a----        27-06-2025     15:58          16664 System.Dynamic.Runtime.dll
+-a----        27-06-2025     15:58         239880 System.Formats.Asn1.dll
+-a----        27-06-2025     15:58         272664 System.Formats.Tar.dll
+-a----        27-06-2025     15:58          16160 System.Globalization.Calendars.dll
+-a----        27-06-2025     15:58          16152 System.Globalization.dll
+-a----        27-06-2025     15:58          15632 System.Globalization.Extensions.dll
+-a----        15-07-2025     15:51         194592 System.IdentityModel.Tokens.Jwt.dll
+-a----        27-06-2025     15:58          84264 System.IO.Compression.Brotli.dll
+-a----        27-06-2025     15:58         268568 System.IO.Compression.dll
+-a----        27-06-2025     15:58          15640 System.IO.Compression.FileSystem.dll
+-a----        26-06-2025     15:49         926984 System.IO.Compression.Native.dll
+-a----        27-06-2025     15:58          55568 System.IO.Compression.ZipFile.dll
+-a----        27-06-2025     15:58          16152 System.IO.dll
+-a----        27-06-2025     15:58         104712 System.IO.FileSystem.AccessControl.dll
+-a----        27-06-2025     15:58          16152 System.IO.FileSystem.dll
+-a----        27-06-2025     15:58          55560 System.IO.FileSystem.DriveInfo.dll
+-a----        27-06-2025     15:58          15624 System.IO.FileSystem.Primitives.dll
+-a----        27-06-2025     15:58          88328 System.IO.FileSystem.Watcher.dll
+-a----        27-06-2025     15:58          92448 System.IO.IsolatedStorage.dll
+-a----        27-06-2025     15:58          84232 System.IO.MemoryMappedFiles.dll
+-a----        27-06-2025     15:58         194872 System.IO.Pipelines.dll
+-a----        27-06-2025     15:58          16144 System.IO.Pipes.AccessControl.dll
+-a----        27-06-2025     15:58         170256 System.IO.Pipes.dll
+-a----        27-06-2025     15:58          15640 System.IO.UnmanagedMemoryStream.dll
+-a----        27-06-2025     15:58         657680 System.Linq.dll
+-a----        27-06-2025     15:58        3668248 System.Linq.Expressions.dll
+-a----        27-06-2025     15:58         801048 System.Linq.Parallel.dll
+-a----        27-06-2025     15:58         178472 System.Linq.Queryable.dll
+-a----        15-07-2025     15:51          55320 System.Memory.Data.dll
+-a----        27-06-2025     15:58         162064 System.Memory.dll
+-a----        27-06-2025     15:58          17680 System.Net.dll
+-a----        27-06-2025     15:58        1788208 System.Net.Http.dll
+-a----        27-06-2025     15:58         133384 System.Net.Http.Json.dll
+-a----        27-06-2025     15:58         551176 System.Net.HttpListener.dll
+-a----        27-06-2025     15:58         432392 System.Net.Mail.dll
+-a----        27-06-2025     15:58         125224 System.Net.NameResolution.dll
+-a----        27-06-2025     15:58         158008 System.Net.NetworkInformation.dll
+-a----        27-06-2025     15:58          96536 System.Net.Ping.dll
+-a----        27-06-2025     15:58         227592 System.Net.Primitives.dll
+-a----        27-06-2025     15:58         370976 System.Net.Quic.dll
+-a----        27-06-2025     15:58         383272 System.Net.Requests.dll
+-a----        27-06-2025     15:58         678200 System.Net.Security.dll
+-a----        27-06-2025     15:58          15624 System.Net.ServicePoint.dll
+-a----        27-06-2025     15:58         547096 System.Net.Sockets.dll
+-a----        27-06-2025     15:58         170264 System.Net.WebClient.dll
+-a----        27-06-2025     15:58          63752 System.Net.WebHeaderCollection.dll
+-a----        27-06-2025     15:58          43304 System.Net.WebProxy.dll
+-a----        27-06-2025     15:58         104712 System.Net.WebSockets.Client.dll
+-a----        27-06-2025     15:58         235800 System.Net.WebSockets.dll
+-a----        27-06-2025     15:58          15624 System.Numerics.dll
+-a----        27-06-2025     15:58          16184 System.Numerics.Vectors.dll
+-a----        27-06-2025     15:58          84272 System.ObjectModel.dll
+-a----        27-06-2025     15:58       15264016 System.Private.CoreLib.dll
+-a----        27-06-2025     15:58        2070808 System.Private.DataContractSerialization.dll
+-a----        27-06-2025     15:58         260400 System.Private.Uri.dll
+-a----        27-06-2025     15:58        7919912 System.Private.Xml.dll
+-a----        27-06-2025     15:58         399656 System.Private.Xml.Linq.dll
+-a----        27-06-2025     15:58          76056 System.Reflection.DispatchProxy.dll
+-a----        27-06-2025     15:58          16672 System.Reflection.dll
+-a----        27-06-2025     15:58         301344 System.Reflection.Emit.dll
+-a----        27-06-2025     15:58          16144 System.Reflection.Emit.ILGeneration.dll
+-a----        27-06-2025     15:58          16144 System.Reflection.Emit.Lightweight.dll
+-a----        27-06-2025     15:58          15664 System.Reflection.Extensions.dll
+-a----        27-06-2025     15:58        1173768 System.Reflection.Metadata.dll
+-a----        27-06-2025     15:58          16136 System.Reflection.Primitives.dll
+-a----        27-06-2025     15:58          43312 System.Reflection.TypeExtensions.dll
+-a----        27-06-2025     15:58          15624 System.Resources.Reader.dll
+-a----        27-06-2025     15:58          16136 System.Resources.ResourceManager.dll
+-a----        27-06-2025     15:58          51488 System.Resources.Writer.dll
+-a----        27-06-2025     15:58          15640 System.Runtime.CompilerServices.Unsafe.dll
+-a----        27-06-2025     15:58          31000 System.Runtime.CompilerServices.VisualC.dll
+-a----        27-06-2025     15:58          44832 System.Runtime.dll
+-a----        27-06-2025     15:58          18184 System.Runtime.Extensions.dll
+-a----        27-06-2025     15:58          15648 System.Runtime.Handles.dll
+-a----        27-06-2025     15:58         112904 System.Runtime.InteropServices.dll
+-a----        27-06-2025     15:58          51480 System.Runtime.InteropServices.JavaScript.dll
+-a----        27-06-2025     15:58          15624 System.Runtime.InteropServices.RuntimeInformation.dll
+-a----        27-06-2025     15:58          17672 System.Runtime.Intrinsics.dll
+-a----        27-06-2025     15:58          16160 System.Runtime.Loader.dll
+-a----        27-06-2025     15:58         354600 System.Runtime.Numerics.dll
+-a----        27-06-2025     15:58          17168 System.Runtime.Serialization.dll
+-a----        27-06-2025     15:58         125224 System.Runtime.Serialization.Formatters.dll
+-a----        27-06-2025     15:58          16152 System.Runtime.Serialization.Json.dll
+-a----        27-06-2025     15:58          39200 System.Runtime.Serialization.Primitives.dll
+-a----        27-06-2025     15:58          17160 System.Runtime.Serialization.Xml.dll
+-a----        27-06-2025     15:58         231712 System.Security.AccessControl.dll
+-a----        27-06-2025     15:58         100616 System.Security.Claims.dll
+-a----        27-06-2025     15:58          17712 System.Security.Cryptography.Algorithms.dll
+-a----        27-06-2025     15:58          16664 System.Security.Cryptography.Cng.dll
+-a----        27-06-2025     15:58          16152 System.Security.Cryptography.Csp.dll
+-a----        27-06-2025     15:58        2128168 System.Security.Cryptography.dll
+-a----        27-06-2025     15:58          16152 System.Security.Cryptography.Encoding.dll
+-a----        27-06-2025     15:58          15640 System.Security.Cryptography.OpenSsl.dll
+-a----        27-06-2025     15:58          16152 System.Security.Cryptography.Primitives.dll
+-a----        15-07-2025     15:51          55328 System.Security.Cryptography.ProtectedData.dll
+-a----        27-06-2025     15:58          17176 System.Security.Cryptography.X509Certificates.dll
+-a----        27-06-2025     15:58          18712 System.Security.dll
+-a----        27-06-2025     15:58          15648 System.Security.Principal.dll
+-a----        27-06-2025     15:58         186672 System.Security.Principal.Windows.dll
+-a----        27-06-2025     15:58          15640 System.Security.SecureString.dll
+-a----        27-06-2025     15:58          17160 System.ServiceModel.Web.dll
+-a----        27-06-2025     15:58          16176 System.ServiceProcess.dll
+-a----        27-06-2025     15:58         862472 System.Text.Encoding.CodePages.dll
+-a----        27-06-2025     15:58          16144 System.Text.Encoding.dll
+-a----        27-06-2025     15:58          16176 System.Text.Encoding.Extensions.dll
+-a----        27-06-2025     15:58         133392 System.Text.Encodings.Web.dll
+-a----        27-06-2025     15:58        1796360 System.Text.Json.dll
+-a----        27-06-2025     15:58        1022232 System.Text.RegularExpressions.dll
+-a----        27-06-2025     15:58         141624 System.Threading.Channels.dll
+-a----        27-06-2025     15:58          84264 System.Threading.dll
+-a----        27-06-2025     15:58          16176 System.Threading.Overlapped.dll
+-a----        27-06-2025     15:58         493840 System.Threading.Tasks.Dataflow.dll
+-a----        27-06-2025     15:58          17176 System.Threading.Tasks.dll
+-a----        27-06-2025     15:58          16160 System.Threading.Tasks.Extensions.dll
+-a----        27-06-2025     15:59         133384 System.Threading.Tasks.Parallel.dll
+-a----        27-06-2025     15:59          16168 System.Threading.Thread.dll
+-a----        27-06-2025     15:59          16136 System.Threading.ThreadPool.dll
+-a----        27-06-2025     15:59          15656 System.Threading.Timer.dll
+-a----        27-06-2025     15:59          16696 System.Transactions.dll
+-a----        27-06-2025     15:59         653584 System.Transactions.Local.dll
+-a----        27-06-2025     15:59          15624 System.ValueTuple.dll
+-a----        27-06-2025     15:59          15624 System.Web.dll
+-a----        27-06-2025     15:59          63768 System.Web.HttpUtility.dll
+-a----        27-06-2025     15:59          16136 System.Windows.dll
+-a----        27-06-2025     15:59          23832 System.Xml.dll
+-a----        27-06-2025     15:59          16152 System.Xml.Linq.dll
+-a----        27-06-2025     15:59          22280 System.Xml.ReaderWriter.dll
+-a----        27-06-2025     15:59          16664 System.Xml.Serialization.dll
+-a----        27-06-2025     15:59          16168 System.Xml.XDocument.dll
+-a----        27-06-2025     15:59          16136 System.Xml.XmlDocument.dll
+-a----        27-06-2025     15:59          18184 System.Xml.XmlSerializer.dll
+-a----        27-06-2025     15:59          16168 System.Xml.XPath.dll
+-a----        27-06-2025     15:59          31000 System.Xml.XPath.XDocument.dll
+-a----        15-07-2025     15:51        1751080 Watermarker.dll
+-a----        04-12-2024     20:33            725 Watermarker.exp
+-a----        04-12-2024     20:33           1794 Watermarker.lib
+-a----        15-07-2025     15:51          16664 WindowsBase.dll
+-a----        29-10-2024     16:05         387112 WinRT.Host.dll
+-a----        29-10-2024     16:05          16416 WinRT.Host.dll.mui
+-a----        11-03-2025     11:05           1752 WinRT.Host.runtimeconfig.json
+-a----        29-10-2024     16:05          17960 WinRT.Host.Shim.dll
+-a----        29-10-2024     16:05         399792 WinRT.Runtime.dll
+-a----        15-07-2025     15:51        8268320 WinRTAdapter.dll
+-a----        29-10-2024     16:05            672 WinRTAdapter.pri
+-a----        15-07-2025     15:51           2560 WinRTAdapter.winmd
+
+
+PS C:\Users\amole> dir "C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe" p*
+
+
+    Directory: C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15-07-2025     15:03                PerceptiveShell
+d-----        15-07-2025     15:03                Photos.App
+d-----        15-07-2025     15:03                Photos.App.Collection
+d-----        15-07-2025     15:03                Photos.Consent
+d-----        15-07-2025     15:03                Photos.Controls
+d-----        15-07-2025     15:03                Photos.Controls.Maps
+d-----        15-07-2025     15:03                Photos.Controls.Media
+d-----        15-07-2025     15:03                Photos.Controls.Ocr
+d-----        15-07-2025     15:03                Photos.Controls.Pill
+d-----        15-07-2025     15:03                Photos.Controls.Timeline
+d-----        15-07-2025     15:03                PhotosManager
+-a----        15-07-2025     15:47        1163296 Photos.AIServices.CppWinRT.dll
+-a----        29-10-2024     16:03            728 Photos.AIServices.CppWinRT.pri
+-a----        15-07-2025     15:47         174112 Photos.AIServices.CsWinRT.dll
+-a----        10-05-2025     21:05            728 Photos.AIServices.CsWinRT.pri
+-a----        15-07-2025     15:47          12800 Photos.AIServices.winmd
+-a----        15-07-2025     15:47          86560 Photos.AIUtils.dll
+-a----        15-07-2025     15:47         550984 Photos.App.Collection.dll
+-a----        15-07-2025     15:47          28890 Photos.App.Collection.NativeHost.deps.json
+-a----        15-07-2025     15:47          30752 Photos.App.Collection.NativeHost.dll
+-a----        15-07-2025     15:47            428 Photos.App.Collection.NativeHost.runtimeconfig.json
+-a----        15-07-2025     15:47        1198112 Photos.App.Collection.NativeHostNE.dll
+-a----        29-10-2024     16:03           2544 Photos.App.Collection.NativeHostNE.h
+-a----        15-07-2025     15:47           3404 Photos.App.Collection.NativeHostNE.lib
+-a----        15-07-2025     15:48        7168312 Photos.App.Collection.pri
+-a----        15-07-2025     15:48           3584 Photos.App.Collection.winmd
+-a----        15-07-2025     15:48        2691624 Photos.App.Container.dll
+-a----        10-05-2025     21:05           8112 Photos.App.Container.pri
+-a----        15-07-2025     15:48           7680 Photos.App.winmd
+-a----        15-07-2025     15:48         199712 Photos.Authentication.CppWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Authentication.CppWinRT.pri
+-a----        15-07-2025     15:48         124960 Photos.Authentication.CsWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Authentication.CsWinRT.pri
+-a----        15-07-2025     15:48         635952 Photos.Authentication.dll
+-a----        15-07-2025     15:48           6656 Photos.Authentication.winmd
+-a----        15-07-2025     15:48         107048 Photos.AutoPlay.exe
+-a----        15-07-2025     15:48          34872 Photos.Collection.Models.dll
+-a----        15-07-2025     15:48          14368 Photos.Collection.Models.Interfaces.dll
+-a----        29-10-2024     16:03            768 Photos.Collection.Models.Interfaces.pri
+-a----        29-10-2024     16:03            720 Photos.Collection.Models.pri
+-a----        15-07-2025     15:48          60960 Photos.Configuration.CppWinRT.dll
+-a----        29-10-2024     16:03            744 Photos.Configuration.CppWinRT.pri
+-a----        15-07-2025     15:48          91192 Photos.Configuration.dll
+-a----        15-07-2025     15:48           5120 Photos.Configuration.winmd
+-a----        15-07-2025     15:48         436264 Photos.Consent.dll
+-a----        15-07-2025     15:48         262464 Photos.Consent.pri
+-a----        15-07-2025     15:48           4608 Photos.Consent.winmd
+-a----        15-07-2025     15:48        1954360 Photos.Controls.dll
+-a----        15-07-2025     15:48         549960 Photos.Controls.Maps.dll
+-a----        29-10-2024     16:03           2072 Photos.Controls.Maps.pri
+-a----        15-07-2025     15:48           6144 Photos.Controls.Maps.winmd
+-a----        15-07-2025     15:48         354848 Photos.Controls.Media.dll
+-a----        10-05-2025     21:05          15128 Photos.Controls.Media.pri
+-a----        15-07-2025     15:48           5632 Photos.Controls.Media.winmd
+-a----        15-07-2025     15:48         547896 Photos.Controls.Ocr.dll
+-a----        11-03-2025     00:51          19528 Photos.Controls.Ocr.pri
+-a----        15-07-2025     15:48           6656 Photos.Controls.Ocr.winmd
+-a----        15-07-2025     15:48          92192 Photos.Controls.Pill.dll
+-a----        29-10-2024     16:03          13992 Photos.Controls.Pill.pri
+-a----        11-03-2025     00:51          34192 Photos.Controls.pri
+-a----        15-07-2025     15:48         235552 Photos.Controls.Timeline.dll
+-a----        15-07-2025     15:48        6751048 Photos.Controls.Timeline.pri
+-a----        15-07-2025     15:48          11776 Photos.Controls.winmd
+-a----        15-07-2025     15:48        1334296 Photos.Database.dll
+-a----        15-07-2025     15:48          31800 Photos.Database.Models.dll
+-a----        17-12-2024     19:36            688 Photos.Database.pri
+-a----        15-07-2025     15:48         112200 Photos.exe
+-a----        15-07-2025     15:48         575544 Photos.Experimentation.dll
+-a----        15-07-2025     15:48          11264 Photos.Experimentation.winmd
+-a----        15-07-2025     15:48          43040 Photos.Extensions.dll
+-a----        29-10-2024     16:03            696 Photos.Extensions.pri
+-a----        15-07-2025     15:48         323128 Photos.ImageEmbedding.dll
+-a----        15-07-2025     15:48            712 Photos.ImageEmbedding.pri
+-a----        15-07-2025     15:48          68168 Photos.Logging.CppWinRT.dll
+-a----        29-10-2024     16:03            720 Photos.Logging.CppWinRT.pri
+-a----        15-07-2025     15:48          92192 Photos.Logging.CsWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Logging.CsWinRT.pri
+-a----        15-07-2025     15:48         184392 Photos.Logging.dll
+-a----        15-07-2025     15:48           2560 Photos.Logging.winmd
+-a----        15-07-2025     15:48         433184 Photos.Models.CppWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Models.CppWinRT.pri
+-a----        15-07-2025     15:48         276512 Photos.Models.CsWinRT.dll
+-a----        29-10-2024     16:03            712 Photos.Models.CsWinRT.pri
+-a----        15-07-2025     15:48          44584 Photos.Models.dll
+-a----        15-07-2025     15:48          14880 Photos.Models.Interfaces.dll
+-a----        29-10-2024     16:03            720 Photos.Models.Interfaces.pri
+-a----        15-07-2025     15:48          14336 Photos.Models.winmd
+-a----        15-07-2025     15:48         320584 Photos.Ocr.dll
+-a----        29-10-2024     16:03            664 Photos.Ocr.pri
+-a----        15-07-2025     15:48         108584 Photos.Settings.dll
+-a----        11-03-2025     00:51            688 Photos.Settings.pri
+-a----        15-07-2025     15:48         226336 Photos.ShellExtension.dll
+-a----        15-07-2025     15:48         677920 Photos.Telemetry.CsWinRT.dll
+-a----        29-10-2024     16:03            720 Photos.Telemetry.CsWinRT.pri
+-a----        15-07-2025     15:48         950816 Photos.Telemetry.dll
+-a----        29-10-2024     16:03            688 Photos.Telemetry.pri
+-a----        15-07-2025     15:48          51200 Photos.Telemetry.winmd
+-a----        10-05-2025     21:05            696 Photos.Thumbnails.pri
+-a----        15-07-2025     15:48         129056 Photos.UserActivities.dll
+-a----        15-07-2025     15:48         639016 Photos.Utils.CppWinRT.dll-a----        29-10-2024     16:03            712 Photos.Utils.CppWinRT.pri-a----        15-07-2025     15:48         419872 Photos.Utils.CsWinRT.dll-a----        11-03-2025     00:51            704 Photos.Utils.CsWinRT.pri-a----        15-07-2025     15:48        1301024 Photos.Utils.dll
+-a----        29-10-2024     16:03            672 Photos.Utils.pri
+-a----        15-07-2025     15:48          28672 Photos.Utils.winmd
+-a----        15-07-2025     15:48         359496 Photos.Windowing.dll
+-a----        29-10-2024     16:03            688 Photos.Windowing.pri
+-a----        15-07-2025     15:48         153632 Photos.Windowing.Projection.dll
+-a----        29-10-2024     16:03            736 Photos.Windowing.Projection.pri
+-a----        15-07-2025     15:48           7168 Photos.Windowing.winmd
+-a----        15-07-2025     15:48        4272680 PhotosCore.dll
+-a----        29-10-2024     16:03            664 PhotosCore.pri
+-a----        15-07-2025     15:48        4573240 PhotosCsProjection.dll
+-a----        29-10-2024     16:03            696 PhotosCsProjection.pri
+-a----        15-07-2025     15:49        6645792 PhotosManager.dll
+-a----        15-07-2025     15:49        7230296 PhotosManager.pri
+-a----        15-07-2025     15:49         856096 PhotosServiceSdk.dll
+-a----        29-10-2024     16:03            688 PhotosServiceSdk.pri
+-a----        15-07-2025     15:49           2048 PhotosServiceSdk.winmd
+-a----        15-07-2025     15:49        2405432 provenancesdk.dll
+
+
+PS C:\Users\amole> Start-Process "C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe\Photos.exe"
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           :
+                    <!DOCTYPE html>
+                    <!--<html lang="en" manifest = "mooncalendar.appcache" type="text/cache-manifest">-->
+
+                    <html lang="en" >
+                    <head>
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async sr...
+RawContent        : HTTP/1.1 200 OK
+                    Pragma: no-cache
+                    X-XSS-Protection: 1; mode=block
+                    Transfer-Encoding: chunked
+                    Connection: keep-alive,Transfer-Encoding
+                    Cache-Control: no-cache, no-store, must-revalidate
+                    Content-Ty...
+Forms             : {}
+Headers           : {[Pragma, no-cache], [X-XSS-Protection, 1; mode=block], [Transfer-Encoding, chunked], [Connection,
+                    keep-alive,Transfer-Encoding]...}
+Images            : {@{innerHTML=; innerText=; outerHTML=<IMG alt=" today moon link - mobile"
+                    src="/images/nav_icon_oneday.png" width=25 height=23>; outerText=; tagName=IMG; alt= today moon
+                    link - mobile; src=/images/nav_icon_oneday.png; width=25; height=23}, @{innerHTML=; innerText=;
+                    outerHTML=<IMG alt="monthly moon calendar - mobile" src="/images/nav_icon_month.png" width=25
+                    height=21>; outerText=; tagName=IMG; alt=monthly moon calendar - mobile;
+                    src=/images/nav_icon_month.png; width=25; height=21}, @{innerHTML=; innerText=; outerHTML=<IMG
+                    alt="full moon - mobile" src="/images/nav_icon_full.png" width=25 height=23>; outerText=;
+                    tagName=IMG; alt=full moon - mobile; src=/images/nav_icon_full.png; width=25; height=23},
+                    @{innerHTML=; innerText=; outerHTML=<IMG alt="current full moon - mobile"
+                    src="/images/nav_icon_major.png" width=25 height=26>; outerText=; tagName=IMG; alt=current full                    moon - mobile; src=/images/nav_icon_major.png; width=25; height=26}...}InputFields       : {}Links             : {@{innerHTML=Today's Moon Phase; innerText=Today's Moon Phase; outerHTML=<A                    href="/phase/today/">Today's Moon Phase</A>; outerText=Today's Moon Phase; tagName=A;
+                    href=/phase/today/}, @{innerHTML=Moon Phase Calendar; innerText=Moon Phase Calendar; outerHTML=<A
+                    href="/calendar/">Moon Phase Calendar</A>; outerText=Moon Phase Calendar; tagName=A;
+                    href=/calendar/}, @{innerHTML=Full Moon Calendar; innerText=Full Moon Calendar; outerHTML=<A
+                    href="/fullmoons/">Full Moon Calendar</A>; outerText=Full Moon Calendar; tagName=A;
+                    href=/fullmoons/}, @{innerHTML=July Full Moon; innerText=July Full Moon; outerHTML=<A
+                    href="/moonphases/july/2025/">July Full Moon</A>; outerText=July Full Moon; tagName=A;                    href=/moonphases/july/2025/}...}ParsedHtml        : mshtml.HTMLDocumentClassRawContentLength  : 59317
+
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Object
+Object : The term 'Object' is not recognized as the name of a cmdlet, function, script file, or operable program.Check the spelling of the name, or if a path was included, verify that the path is correct and try again.At line:1 char:60+ Invoke-WebRequest https://www.moongiant.com/phase/today/ | Object+                                                            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Object:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Get-Member Content   TypeName: Microsoft.PowerShell.Commands.HtmlWebResponseObject
+
+Name    MemberType Definition
+----    ---------- ----------
+Content Property   string Content {get;}
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Get-Member Content.ValuePS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Select-Object -Property Content.Value
+Content.Value
+-------------
+
+
+
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Select-Object -Property Content
+
+Content-------...
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Select-Object -Property Links
+
+Links
+-----
+{@{innerHTML=Today's Moon Phase; innerText=Today's Moon Phase; outerHTML=<A href="/phase/today/">Today's Moon Phase<...
+
+
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Select-Object -Property Content | ^C
+PS C:\Users\amole> Invoke-WebRequest https://www.moongiant.com/phase/today/ | Select-Object -Property Content | Get-Content -First 10
+Get-Content : The input object cannot be bound to any parameters for the command either because the command does not
+take pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:94
++ ... hase/today/ | Select-Object -Property Content | Get-Content -First 10
++                                                     ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (@{Content=
+<!DO.../body>
+</html>}:PSObject) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\amole> cd .\Documents\code\scripts2\moon\
+PS C:\Users\amole\Documents\code\scripts2\moon> .\view-phase.ps1
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           :
+                    <!DOCTYPE html>
+                    <!--<html lang="en" manifest = "mooncalendar.appcache" type="text/cache-manifest">-->
+
+                    <html lang="en" >
+                    <head>
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async sr...
+RawContent        : HTTP/1.1 200 OK
+                    Pragma: no-cache
+                    X-XSS-Protection: 1; mode=block
+                    Transfer-Encoding: chunked
+                    Connection: keep-alive,Transfer-Encoding
+                    Cache-Control: no-cache, no-store, must-revalidate
+                    Content-Ty...
+Forms             : {}
+Headers           : {[Pragma, no-cache], [X-XSS-Protection, 1; mode=block], [Transfer-Encoding, chunked], [Connection,
+                    keep-alive,Transfer-Encoding]...}
+Images            : {@{innerHTML=; innerText=; outerHTML=<IMG alt=" today moon link - mobile"
+                    src="/images/nav_icon_oneday.png" width=25 height=23>; outerText=; tagName=IMG; alt= today moon
+                    link - mobile; src=/images/nav_icon_oneday.png; width=25; height=23}, @{innerHTML=; innerText=;
+                    outerHTML=<IMG alt="monthly moon calendar - mobile" src="/images/nav_icon_month.png" width=25
+                    height=21>; outerText=; tagName=IMG; alt=monthly moon calendar - mobile;
+                    src=/images/nav_icon_month.png; width=25; height=21}, @{innerHTML=; innerText=; outerHTML=<IMG
+                    alt="full moon - mobile" src="/images/nav_icon_full.png" width=25 height=23>; outerText=;
+                    tagName=IMG; alt=full moon - mobile; src=/images/nav_icon_full.png; width=25; height=23},
+                    @{innerHTML=; innerText=; outerHTML=<IMG alt="current full moon - mobile"
+                    src="/images/nav_icon_major.png" width=25 height=26>; outerText=; tagName=IMG; alt=current full
+                    moon - mobile; src=/images/nav_icon_major.png; width=25; height=26}...}
+InputFields       : {}
+Links             : {@{innerHTML=Today's Moon Phase; innerText=Today's Moon Phase; outerHTML=<A
+                    href="/phase/today/">Today's Moon Phase</A>; outerText=Today's Moon Phase; tagName=A;
+                    href=/phase/today/}, @{innerHTML=Moon Phase Calendar; innerText=Moon Phase Calendar; outerHTML=<A
+                    href="/calendar/">Moon Phase Calendar</A>; outerText=Moon Phase Calendar; tagName=A;
+                    href=/calendar/}, @{innerHTML=Full Moon Calendar; innerText=Full Moon Calendar; outerHTML=<A
+                    href="/fullmoons/">Full Moon Calendar</A>; outerText=Full Moon Calendar; tagName=A;
+                    href=/fullmoons/}, @{innerHTML=July Full Moon; innerText=July Full Moon; outerHTML=<A
+                    href="/moonphases/july/2025/">July Full Moon</A>; outerText=July Full Moon; tagName=A;
+                    href=/moonphases/july/2025/}...}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 59317
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1^C
+PS C:\Users\amole\Documents\code\scripts2\moon> $c = "This is the test line."
+PS C:\Users\amole\Documents\code\scripts2\moon> Select-String -Pattern "the" $c
+Select-String : Cannot find path 'C:\Users\amole\Documents\code\scripts2\moon\This is the test line.' because it does
+not exist.
+At line:1 char:1
++ Select-String -Pattern "the" $c
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\amole\... the test line.:String) [Select-String], ItemNotFound
+   Exception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SelectStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\moon> Select-String -Pattern "the" -InputObject $cThis is the test line.
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the" -InputObject $c
+PS C:\Users\amole\Documents\code\scripts2\moon> $m
+
+This is the test line.
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $m.Matches
+
+
+Groups   : {0}
+Success  : True
+Name     : 0
+Captures : {0}
+Index    : 8Length   : 3Value    : the
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $m.Matches.value
+the
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1Select-String : A positional parameter cannot be found that accepts argument 'todayMoonContainer>.*</div>'.At C:\Users\amole\Documents\code\scripts2\moon\View-Phase.ps1:4 char:6+ $m = Select-String -Pattern "<div id="todayMoonContainer">.*</div>" - ...+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : InvalidArgument: (:) [Select-String], ParameterBindingException    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SelectStringCommand
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "<div class="">.*</div>" -InputObject $c
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "<div class="test">.*</div>" -InputObject $c
+
+Select-String : A positional parameter cannot be found that accepts argument 'test>.*</div>'.At line:1 char:6+ $m = Select-String -Pattern "<div class="test">.*</div>" -InputObject ...+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : InvalidArgument: (:) [Select-String], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SelectStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+Select-String : A positional parameter cannot be found that accepts argument 'todayMoonContainer\>.*</div>'.
+At C:\Users\amole\Documents\code\scripts2\moon\View-Phase.ps1:4 char:6
++ $m = Select-String -Pattern "<div id=\"todayMoonContainer\">.*</div>" ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SelectStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+<div id="todayMoonContainer"><img src="/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning Crescent on 07/20/2025" /></div>
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+<div id="todayMoonContainer"><img src="/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning Crescent on 07/20/2025" /></div>
+
+<div id="todayMoonContainer"><img src="/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning
+Crescent on 07/20/2025" /></div>
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+<div id="todayMoonContainer"><img src="/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning Crescent on 07/20/2025" /></div>
+src="/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning Crescent on 07/20/2025" /></div>
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the" -InputObject $c; $m.Matches.Value
+the
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the test" -InputObject $c; $m.Matches.Value
+
+the test
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches.Value
+the test
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches
+
+
+Groups   : {0, 1}
+Success  : True
+Name     : 0
+Captures : {0}
+Index    : 8
+Length   : 8
+Value    : the test
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the test" -InputObject $c; $m.Matches
+
+
+Groups   : {0}
+Success  : True
+Name     : 0
+Captures : {0}
+Index    : 8
+Length   : 8
+Value    : the test
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches[1]
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches.Groups
+
+
+Groups   : {0, 1}
+Success  : True
+Name     : 0
+Captures : {0}
+Index    : 8
+Length   : 8
+Value    : the test
+
+Success  : True
+Name     : 1Captures : {1}Index    : 12Length   : 4Value    : testPS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches.Groups[1]Success  : True
+Name     : 1
+Captures : {1}
+Index    : 12
+Length   : 4
+Value    : test
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches.Groups[1].Value
+test
+PS C:\Users\amole\Documents\code\scripts2\moon> $m = Select-String -Pattern "the (test)" -InputObject $c; $m.Matches.Groups[1].Value^C
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+/images/today_phase/moon_day_WanC_25.jpg" width="164" height="164" alt="Waning Crescent on 07/20/2025
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+/images/today_phase/moon_day_WanC_25.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+/images/today_phase/moon_day_WanC_25.jpg
+https://www.moongiant.com/phase/today/images/today_phase/moon_day_WanC_25.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> $i = Invoke-WebRequest https://www.moongiant.com/phase/today/images/today_phase/moon_day_WanC_25.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> $i
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           :
+                    <!DOCTYPE html>
+                    <!--<html lang="en" manifest = "mooncalendar.appcache" type="text/cache-manifest">-->
+
+                    <html lang="en" >
+                    <head>
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async sr...
+RawContent        : HTTP/1.1 200 OK
+                    Pragma: no-cache
+                    X-XSS-Protection: 1; mode=block
+                    Transfer-Encoding: chunked
+                    Connection: keep-alive,Transfer-Encoding
+                    Cache-Control: no-cache, no-store, must-revalidate
+                    Content-Ty...
+Forms             : {}
+Headers           : {[Pragma, no-cache], [X-XSS-Protection, 1; mode=block], [Transfer-Encoding, chunked], [Connection,
+                    keep-alive,Transfer-Encoding]...}
+Images            : {@{innerHTML=; innerText=; outerHTML=<IMG alt=" today moon link - mobile"                    src="/images/nav_icon_oneday.png" width=25 height=23>; outerText=; tagName=IMG; alt= today moon                    link - mobile; src=/images/nav_icon_oneday.png; width=25; height=23}, @{innerHTML=; innerText=;                    outerHTML=<IMG alt="monthly moon calendar - mobile" src="/images/nav_icon_month.png" width=25                    height=21>; outerText=; tagName=IMG; alt=monthly moon calendar - mobile;                    src=/images/nav_icon_month.png; width=25; height=21}, @{innerHTML=; innerText=; outerHTML=<IMG                    alt="full moon - mobile" src="/images/nav_icon_full.png" width=25 height=23>; outerText=;                    tagName=IMG; alt=full moon - mobile; src=/images/nav_icon_full.png; width=25; height=23},                    @{innerHTML=; innerText=; outerHTML=<IMG alt="current full moon - mobile"
+                    src="/images/nav_icon_major.png" width=25 height=26>; outerText=; tagName=IMG; alt=current full
+                    moon - mobile; src=/images/nav_icon_major.png; width=25; height=26}...}
+InputFields       : {}
+Links             : {@{innerHTML=Today's Moon Phase; innerText=Today's Moon Phase; outerHTML=<A
+                    href="/phase/today/">Today's Moon Phase</A>; outerText=Today's Moon Phase; tagName=A;
+                    href=/phase/today/}, @{innerHTML=Moon Phase Calendar; innerText=Moon Phase Calendar; outerHTML=<A
+                    href="/calendar/">Moon Phase Calendar</A>; outerText=Moon Phase Calendar; tagName=A;
+                    href=/calendar/}, @{innerHTML=Full Moon Calendar; innerText=Full Moon Calendar; outerHTML=<A
+                    href="/fullmoons/">Full Moon Calendar</A>; outerText=Full Moon Calendar; tagName=A;
+                    href=/fullmoons/}, @{innerHTML=July Full Moon; innerText=July Full Moon; outerHTML=<A
+                    href="/moonphases/july/2025/">July Full Moon</A>; outerText=July Full Moon; tagName=A;
+                    href=/moonphases/july/2025/}...}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 59327
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+/images/today_phase/moon_day_WanC_25.jpg
+https://www.moongiant.com/phase/today/images/today_phase/moon_day_WanC_25.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> $i2 = Invoke-WebRequest https://www.moongiant.com/images/today_phase/moon_day_WanC_20.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> $i2
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {255, 216, 255, 225...}
+RawContent        : HTTP/1.1 200 OK
+                    X-XSS-Protection: 1; mode=block
+                    Connection: keep-alive
+                    Accept-Ranges: bytes                    Content-Length: 3536                    Cache-Control: max-age=29510                    Content-Type: image/jpeg                    Date: Sun, 20 Jul 2025 10:...
+Headers           : {[X-XSS-Protection, 1; mode=block], [Connection, keep-alive], [Accept-Ranges, bytes],
+                    [Content-Length, 3536]...}
+RawContentLength  : 3536
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\moon> $2.Content > i.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> $2.Content
+PS C:\Users\amole\Documents\code\scripts2\moon> $2.Content.Value
+PS C:\Users\amole\Documents\code\scripts2\moon> $2.Content
+PS C:\Users\amole\Documents\code\scripts2\moon> cat $2.Content
+Get-Content : Cannot bind argument to parameter 'Path' because it is null.
+At line:1 char:5
++ cat $2.Content
++     ~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Get-Content], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.GetContentC
+   ommand
+
+PS C:\Users\amole\Documents\code\scripts2\moon> Set-Content i.jpg $i2.Content
+PS C:\Users\amole\Documents\code\scripts2\moon> Set-Content i.jpg -Value $i2.Content -Encoding Byte
+PS C:\Users\amole\Documents\code\scripts2\moon> .\View-Phase.ps1
+/images/today_phase/moon_day_WanC_25.jpg
+https://www.moongiant.com/phase/today/images/today_phase/moon_day_WanC_25.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> git add -n .
+add 'moon/View-Phase.ps1'
+add 'moon/i.jpg'
+PS C:\Users\amole\Documents\code\scripts2\moon> git add .
+PS C:\Users\amole\Documents\code\scripts2\moon> rm i.jpg
+PS C:\Users\amole\Documents\code\scripts2\moon> git add .
+PS C:\Users\amole\Documents\code\scripts2\moon> git commit -m "Script is working upto the point of making the image URL. The URL, though, does not fetch the image. And, there is something to be resolved related to the filename, which may be based on the date. In progress."
+[master 4e3b949] Script is working upto the point of making the image URL. The URL, though, does not fetch the image. And, there is something to be resolved related to the filename, which may be based on the date. In progress.
+ 1 file changed, 19 insertions(+)
+ create mode 100644 moon/View-Phase.ps1
+PS C:\Users\amole\Documents\code\scripts2\moon> git push
+Enter passphrase for key '/c/Users/amole/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 668 bytes | 668.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:amol10/scripts2.git
+   afea29b..4e3b949  master -> master
+PS C:\Users\amole\Documents\code\scripts2\moon> Start-Process "C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2025.11070.8001.0_x64__8wekyb3d8bbwe\Photos.exe"
+PS C:\Users\amole\Documents\code\scripts2\moon>
