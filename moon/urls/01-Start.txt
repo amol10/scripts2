@@ -1,0 +1,12 @@
+https://www.google.com/search?client=opera&q=powershell+cmdlet&sourceid=opera&ie=UTF-8&oe=UTF-8
+https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines?view=powershell-7.5
+https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/windows-powershell-cmdlet-concepts?view=powershell-7.5
+https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.5
+https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/how-to-write-a-simple-cmdlet?view=powershell-7.5
+https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/examples-of-cmdlet-code?view=powershell-7.5
+https://www.google.com/search?client=opera&q=powershell+execute+cmdlet&sourceid=opera&ie=UTF-8&oe=UTF-8
+https://www.google.com/search?client=opera&q=powershell+multiline+comment&sourceid=opera&ie=UTF-8&oe=UTF-8
+https://www.moongiant.com/phase/today/images/today_phase/moon_day_WanC_25.jpg
+https://www.google.com/search?client=opera&q=powershell+output+binary+data&sourceid=opera&ie=UTF-8&oe=UTF-8
+https://www.moongiant.com/images/today_phase/moon_day_WanC_20.jpg
+https://stackoverflow.com/questions/31855705/write-bytes-to-a-file-natively-in-powershell
