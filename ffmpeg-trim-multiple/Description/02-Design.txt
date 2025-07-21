@@ -1,0 +1,44 @@
+I am going to work on some code now. There is a lot that needs refactoring/design/etc.
+
+Nothing related to the code is coming up for a revisit. So, I am going to try to install an extension for VS Code, if it is available, one which will make VS Code like Vim.
+
+The extension has been installed.
+
+It might conflict with the existing VS Code key bindings. Let me see. Upon opening a new editor window, the cursor showed in a block form. So, it may be that the Vim extension has taken effect.
+
+Now, let me check the Vim keyboard bindings.
+
+The 'h', 'j', 'k', 'l' key bindings work, upon entering the 'Normal' mode by pressing 'Escape'. I am done here, with the verification for the extension installation.
+
+I am going to try more, to revisit the Vim key bindings, it has been a while since I have used Vim.
+
+It has been done, the revisit, I have revisited the key bindings, 'gg', 'G', 'b', 'w', '$'.
+
+With that done, I am going to go back to code, continue some design work.
+
+I have done some modifications to the code. I have added two new files, one each for a single function. The functions are 'debug' and 'trim'.
+
+I am going to take a break.
+
+I am back.
+
+I have done some more modifications.
+
+There was a brief visit to how the program will read the input parameters. I am going with the config file approach.
+
+The config file will be having the following parameters:
+time slice filename
+input filename
+output filename
+E.g.
+ts.txt
+in.mp4
+out.mp4
+
+The config filename will be 'config.txt' by default, to be overridden by a command line parameter.
+
+The intermediate file, video segment list file will have a fixed name, 'vl.txt' and it will be dropped in the current folder.
+
+I am going to stop now. I am going to commit the code.
+
+The code has been committed.
