@@ -13,3 +13,24 @@ class ConfigFile
         pass
 
     
+class TimeSlice:
+
+    def __init__(self):
+        self.start_time = ""
+        self.end_time = ""
+
+    
+    def set(self, start_time, end_time):
+        self.start_time = start_time
+        self.end_time = end_time
+
+
+class Config:
+    time_slice_filename = ""
+
+class TimeSliceFile:
+
+    def __init__(self):
+        self.filename = Config.time_slice_filename
+
+        

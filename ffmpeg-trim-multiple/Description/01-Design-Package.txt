@@ -1,0 +1,35 @@
+I am going to continue on some code. I am going to do it while I am offline.
+
+The project, which was previously a script, needs some classes and functions as part of the design. I have listed the classes and functions. I have added one more function to it.
+
+Also, the project needs a package/installer, for it to be installed as a utility which can be used from any path.
+
+That's the quick review of the project: Trimmer.
+
+I added some code to the project. I continued on the design work. I have started adding more classes, I am doing in the same file as the first class.
+
+The project needs package/installer. I used to package my python projects and used to upload them to  PyPI. That may not be necessary. I can add the project path to the Windows PATH env variable, and, have a PS cmdlet execute the python project as a module, with '-m' switch. The project will then be usable across the system as a command/cmdlet.
+
+Now, let me see about the PS/cmdlet.
+
+I had installed the PS help, using the Update-Help command. But, it is not showing. So, I went with the direct approach, of executing a command to check out what it does.
+
+The Install-Module cmdlet may be useful here, to install a given PS module, for system wide use.
+
+I am going to test it by making a small cmdlet.
+
+I don't know how to pass command line arguments to a PS script. I am going to try something here.
+
+Reading an input command line argument for a PS script is taking some work.
+
+I decided to search the docs for help, accessing the Windows Help feature now needs an Internet connection, so does the good old 'F1'.
+
+I tried to install the test PS module, Test-Util with Install-Module, it reported that it needs Administrator privileges. Upon using Install-Module command with the Admin privileges, an error was emitted, that, 'Nuget is required'. I think, it is some kind of package manager. I am going to do the current task offline, so, not going offline right now.
+
+One guess is that, 'Nuget' package system will be looked up by the Install-Module command, and, that a local cmdlet scripted may not be installable by the command.
+
+Another option is to directly copy the PS script to the folder, the path of which was displayed in the error message of the command, Install-Module, "C:\Program Files\WindowsPowerShell\Modules".
+
+Upon inspection of the directory, it is not clear what can be done. So, this option will be examined later.
+
+I am going to stop now. It was some one hour of design/package/installer work.

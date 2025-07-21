@@ -1,5 +1,5 @@
 
-ts.txt
+C:\Users\amole\Videos\ts.txt
 vl.txt
 C:\Users\amole\Videos\pyin.mp4
 C:\Users\amole\Bin\ffmpeg\bin\ffmpeg

@@ -9,3 +9,4 @@ Operations:
 
 trim
 join
+debug
