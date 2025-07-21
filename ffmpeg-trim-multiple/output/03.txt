@@ -1,0 +1,183 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\amole> Help Install-Module
+
+NAME
+    Install-Module
+
+SYNTAX
+    Install-Module [-Name] <string[]> [-MinimumVersion <version>] [-MaximumVersion <version>] [-RequiredVersion
+    <version>] [-Repository <string[]>] [-Credential <pscredential>] [-Scope {CurrentUser | AllUsers}] [-Proxy <uri>]
+    [-ProxyCredential <pscredential>] [-AllowClobber] [-SkipPublisherCheck] [-Force] [-WhatIf] [-Confirm]
+    [<CommonParameters>]
+
+    Install-Module [-InputObject] <psobject[]> [-Credential <pscredential>] [-Scope {CurrentUser | AllUsers}] [-Proxy
+    <uri>] [-ProxyCredential <pscredential>] [-AllowClobber] [-SkipPublisherCheck] [-Force] [-WhatIf] [-Confirm]
+    [<CommonParameters>]
+
+
+ALIASES
+    inmo
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Install-Module -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=398573.
+
+
+
+
+PS C:\Users\amole> Get-Help Install-Module
+
+NAME
+    Install-Module
+
+SYNTAX
+    Install-Module [-Name] <string[]> [-MinimumVersion <version>] [-MaximumVersion <version>] [-RequiredVersion
+    <version>] [-Repository <string[]>] [-Credential <pscredential>] [-Scope {CurrentUser | AllUsers}] [-Proxy <uri>]
+    [-ProxyCredential <pscredential>] [-AllowClobber] [-SkipPublisherCheck] [-Force] [-WhatIf] [-Confirm]
+    [<CommonParameters>]
+
+    Install-Module [-InputObject] <psobject[]> [-Credential <pscredential>] [-Scope {CurrentUser | AllUsers}] [-Proxy
+    <uri>] [-ProxyCredential <pscredential>] [-AllowClobber] [-SkipPublisherCheck] [-Force] [-WhatIf] [-Confirm]
+    [<CommonParameters>]
+
+
+ALIASES
+    inmo
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Install-Module -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=398573.
+
+
+
+PS C:\Users\amole> Install-Module
+
+cmdlet Install-Module at command pipeline position 1
+Supply values for the following parameters:
+Name[0]:
+Install-Module : Cannot validate argument on parameter 'Name'. The argument is null, empty, or an element of the
+argument collection contains a null value. Supply a collection that does not contain any null values and then try the
+command again.
+At line:1 char:1
++ Install-Module
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Install-Module], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Install-Module
+
+PS C:\Users\amole> cd .\Documents\code\scripts2\ffmpeg-trim-multiple\test\
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1
+
+cmdlet Select-String at command pipeline position 1
+Supply values for the following parameters:
+Path[0]: test
+Path[1]: test
+Path[2]:
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 "test"
+
+cmdlet Select-String at command pipeline position 1
+Supply values for the following parameters:
+Path[0]:
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 "test"
+Select-String : Cannot bind argument to parameter 'Path' because it is null.
+At C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test\Test-Util.ps1:1 char:37
++ Select-String -Pattern ".*@.*\.com" $1
++                                     ~~
+    + CategoryInfo          : InvalidData: (:) [Select-String], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.SelectStrin
+   gCommand
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test"
+Select-String : Cannot bind argument to parameter 'Path' because it is null.
+At C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test\Test-Util.ps1:1 char:37
++ Select-String -Pattern ".*@.*\.com" $1
++                                     ~~
+    + CategoryInfo          : InvalidData: (:) [Select-String], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.SelectStrin
+   gCommand
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test"
+Select-String : Cannot bind argument to parameter 'Path' because it is an empty string.
+At C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test\Test-Util.ps1:2 char:37
++ Select-String -Pattern ".*@.*\.com" $input
++                                     ~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Select-String], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.Sele
+   ctStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Select-String -Pattern "test" -InputObject "t"
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Select-String -Pattern "test" -InputObject "test 1"
+
+
+test 1
+
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test"
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Select-String -Pattern ".*\@.*\.com" -InputObject "test 1"
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Select-String -Pattern ".*\@.*\.com" -InputObject "test@e.com"
+
+test@e.com
+
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 "test@e.com"
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 "test@e.com"
+Gel
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+System.Collections.ArrayList+ArrayListEnumeratorSimple
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+System.Collections.ArrayList+ArrayListEnumeratorSimple
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"
+System.Collections.ArrayList+ArrayListEnumeratorSimple
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> .\Test-Util.ps1 -Input "test@e.com"^C
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Install-Module -Name .\Test-Util.ps1
+Install-Module : Administrator rights are required to install modules in 'C:\Program Files\WindowsPowerShell\Modules'.
+Log on to the computer with an account that has Administrator rights, and then try again, or install
+'C:\Users\amole\Documents\WindowsPowerShell\Modules' by adding "-Scope CurrentUser" to your command. You can also try
+running the Windows PowerShell session with elevated rights (Run as Administrator).
+At line:1 char:1
++ Install-Module -Name .\Test-Util.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Install-Module], ArgumentException
+    + FullyQualifiedErrorId : InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser,Install-Module
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> Install-Module -Name Test-Util
+Install-Module : Administrator rights are required to install modules in 'C:\Program Files\WindowsPowerShell\Modules'.
+Log on to the computer with an account that has Administrator rights, and then try again, or install
+'C:\Users\amole\Documents\WindowsPowerShell\Modules' by adding "-Scope CurrentUser" to your command. You can also try
+running the Windows PowerShell session with elevated rights (Run as Administrator).
+At line:1 char:1
++ Install-Module -Name Test-Util
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Install-Module], ArgumentException
+    + FullyQualifiedErrorId : InstallModuleNeedsCurrentUserScopeParameterForNonAdminUser,Install-Module
+
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple\test> cd ..
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple> git add -n .
+add 'ffmpeg-trim-multiple/config.txt'
+add 'ffmpeg-trim-multiple/design.txt'
+add 'ffmpeg-trim-multiple/trimmer/config-file.py'
+add 'ffmpeg-trim-multiple/Description/01-Design-Package.txt'
+add 'ffmpeg-trim-multiple/output/02-admin.txt'
+add 'ffmpeg-trim-multiple/test/Test-Util.ps1'
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple> git add .
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple> git commit -m "Added to the design. Added sessions related to the installing of PS cmdlet. Added description."
+[master ce04776] Added to the design. Added sessions related to the installing of PS cmdlet. Added description.
+ 6 files changed, 102 insertions(+), 2 deletions(-)
+ create mode 100644 ffmpeg-trim-multiple/Description/01-Design-Package.txt
+ create mode 100644 ffmpeg-trim-multiple/output/02-admin.txt
+ create mode 100644 ffmpeg-trim-multiple/test/Test-Util.ps1
+PS C:\Users\amole\Documents\code\scripts2\ffmpeg-trim-multiple>
