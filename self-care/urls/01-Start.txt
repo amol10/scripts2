@@ -1,0 +1,4 @@
+https://www.britannica.com/topic/list-of-serial-killers-2026519
+https://stackoverflow.com/questions/2157554/how-to-handle-command-line-arguments-in-powershell
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.5#-exclude
+https://devblogs.microsoft.com/scripting/basics-of-powershell-looping-foreach
