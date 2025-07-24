@@ -1,0 +1,29 @@
+I have been compressing the videos I record before uploading them. I have been doing it using the 'ffmpeg' command line tool. It is working. But, it takes time, longer the video, more time it takes. And, I think, it should not be so. With the modern processor facility of multiple cores and multiple threads, it must be possible to do this using multiple threads, if the tool is not doing it already.
+
+I suspect, that, 'ffmpeg' is doing the compression on a single thread. I may be able to make it better, by, breaking down a video into multiple parts, like 4, and then have multiple threads, or rather processes compress them, and then join the parts after compression, to get the final compressed video.
+
+I will do the time comparison.
+
+The elapsed time reported for the video, in the example, is, 'elapsed=0:01:05.75'.
+
+Now, let me see if I can bring it down.
+
+I am going to start with a known option, the 'parallel' utility. I have used it on Linux, to fire up multiple processes for a task, after breaking it down.
+
+Let me search for the utility, let me see if it is available for Windows.
+
+I searched the Internet, it seems that the program is available for Windows. Although, an 'exe' installer is not available. There is a source package, from which you have to build the program. Or, there is one more option, 'pacman', it may be the command installed by the 'MSYS2' package manager, linked to, on the page.
+
+I am installing 'MSYS2'.
+
+GNU Parallel has been installed via 'pacman' in the MSYS2 shell.
+
+Now, the next step, let me break down the video in 4 parts.
+
+I have used a program I developed to trim a video into multiple segments and then join them together. Now, we have 4 parts. 0.mp4 to 3.mp4.
+
+Now, let me try the 'parallel' utility.
+
+The utility seems accessible only from the MSYS2 shell. There was some time involved to find out the directories related to the MSYS2 system. I have copied the video files to the MSYS2 system dir structure. The next part, executing 4 jobs, needs a facility to provide some kind of pattern to have the 4 jobs pick up the 4 different mp4 files. This might take time.
+
+I am going to stop now.

@@ -1,0 +1,5 @@
+https://www.gnu.org/software/parallel
+https://www.gnu.org/software/parallel/parallel_cheat.pdf
+https://www.gnu.org/software/parallel/env_parallel.html
+https://www.google.com/search?q=gnu+parallel+windows&client=opera&hs=lY2&sca_esv=c29e0acc1e59cdbc&ei=Wk-CaMijIPawwcsPkYGmWQ&ved=0ahUKEwjIuNz65dWOAxV2WHADHZGAKQsQ4dUDCBA&uact=5&oq=gnu+parallel+windows&gs_lp=Egxnd3Mtd2l6LXNlcnAiFGdudSBwYXJhbGxlbCB3aW5kb3dzMgUQABiABDILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFSPcOUOoBWIAOcAB4ApABAJgBxAGgAYoKqgEDMC43uAEDyAEA-AEBmAIIoAKjCsICBBAAGEfCAgoQABiABBhDGIoFwgIGEAAYFhgewgIIEAAYgAQYogSYAwDiAwUSATEgQIgGAZAGCJIHAzEuN6AH8RiyBwMwLje4B50KwgcFMC42LjLIBxM&sclient=gws-wiz-serp
+https://www.msys2.org/docs/environments
