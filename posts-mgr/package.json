@@ -1,0 +1,16 @@
+{
+  "name": "posts-mgr",
+  "version": "1.0.0",
+  "description": "A Javascript blog posts manager.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "test.js",
+    "start": "node server.js"
+  },
+  "author": "Amol",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.7"
+  }
+}

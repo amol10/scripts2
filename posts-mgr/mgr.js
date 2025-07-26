@@ -1,11 +1,20 @@
-//var fs = require("fs");
+/*var requirejs = require('requirejs');
+requirejs.config({
+    nodeRequire: require
+});*/
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+const fs = require('fs').promises; //('node:fs/promises');
+const path = require('path');
+//import 'fs'; // as fs; // = require("fs");
 
 console.log("loaded");
 
-var fs = new FileSystem();
+//var fs = new FileSystem();
 
 async function walk_dir(dir_path) {
-    const files = await fs.readdir(dir_path);
+    const files = await fs.readdir(dir_path, { withFileTypes: true });
 
     await Promise.all(
         files.map(file => {
@@ -17,4 +26,6 @@ async function walk_dir(dir_path) {
     );
 }
 
-walk_dir("C:\Users\amole\Documents\code\scripts2");
+walk_dir("C:\\Users\\amole\\Documents\\code\\scripts2");
+
+//export { walk_dir };
