@@ -1,0 +1,866 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\amole> cd .\Documents\code\scripts2\posts-mgr\
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add -n .
+add 'posts-mgr/mgr.html'
+add 'posts-mgr/mgr.js'
+add 'posts-mgr/server.js'
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add .
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git commit -m "Working, server is working, dir walking in progress."
+[master 5f1d366] Working, server is working, dir walking in progress.
+ 3 files changed, 35 insertions(+)
+ create mode 100644 posts-mgr/mgr.html
+ create mode 100644 posts-mgr/mgr.js
+ create mode 100644 posts-mgr/server.js
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> cd ..
+PS C:\Users\amole\Documents\code\scripts2> cd ..
+PS C:\Users\amole\Documents\code> cd ..
+PS C:\Users\amole\Documents> cd ..
+PS C:\Users\amole> cd C:\Users\amole\node_modules\
+PS C:\Users\amole\node_modules> dir
+
+
+    Directory: C:\Users\amole\node_modules
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11-07-2025     16:52                .bin
+d-----        11-07-2025     16:37                @0no-co
+d-----        11-07-2025     16:37                @ampproject
+d-----        11-07-2025     16:37                @babel
+d-----        11-07-2025     16:37                @expo
+d-----        11-07-2025     16:37                @isaacs
+d-----        11-07-2025     16:37                @istanbuljs
+d-----        11-07-2025     16:37                @jest
+d-----        11-07-2025     16:37                @jridgewell
+d-----        11-07-2025     16:37                @pkgjs
+d-----        11-07-2025     16:37                @react-native
+d-----        11-07-2025     16:37                @sinclair
+d-----        11-07-2025     16:37                @sinonjs
+d-----        11-07-2025     16:37                @types
+d-----        11-07-2025     16:37                @urql
+d-----        11-07-2025     16:37                @xmldom
+d-----        11-07-2025     16:37                abort-controller
+d-----        11-07-2025     16:37                accepts
+d-----        11-07-2025     16:37                acorn
+d-----        11-07-2025     16:37                agent-base
+d-----        11-07-2025     16:37                anser
+d-----        11-07-2025     16:37                ansi-escapes
+d-----        11-07-2025     16:37                ansi-regex
+d-----        11-07-2025     16:37                ansi-styles
+d-----        11-07-2025     16:37                any-promise
+d-----        11-07-2025     16:37                anymatch
+d-----        11-07-2025     16:37                arg
+d-----        11-07-2025     16:37                argparse
+d-----        11-07-2025     16:37                asap
+d-----        11-07-2025     16:37                async-limiter
+d-----        11-07-2025     16:37                babel-jest
+d-----        11-07-2025     16:37                babel-plugin-istanbul
+d-----        11-07-2025     16:37                babel-plugin-jest-hoist
+d-----        11-07-2025     16:37                babel-plugin-polyfill-corejs2
+d-----        11-07-2025     16:37                babel-plugin-polyfill-corejs3
+d-----        11-07-2025     16:37                babel-plugin-polyfill-regenerator
+d-----        11-07-2025     16:37                babel-plugin-react-native-web
+d-----        11-07-2025     16:37                babel-plugin-syntax-hermes-parser
+d-----        11-07-2025     16:37                babel-plugin-transform-flow-enums
+d-----        11-07-2025     16:37                babel-preset-current-node-syntax
+d-----        11-07-2025     16:38                babel-preset-expo
+d-----        11-07-2025     16:37                babel-preset-jest
+d-----        11-07-2025     16:37                balanced-match
+d-----        11-07-2025     16:37                base64-js
+d-----        11-07-2025     16:38                better-opn
+d-----        11-07-2025     16:37                big-integer
+d-----        11-07-2025     16:37                bplist-creator
+d-----        11-07-2025     16:37                bplist-parser
+d-----        11-07-2025     16:37                brace-expansion
+d-----        11-07-2025     16:37                braces
+d-----        11-07-2025     16:37                browserslist
+d-----        11-07-2025     16:37                bser
+d-----        11-07-2025     16:37                buffer
+d-----        11-07-2025     16:37                buffer-from
+d-----        11-07-2025     16:37                bytes
+d-----        11-07-2025     16:37                caller-callsite
+d-----        11-07-2025     16:37                caller-path
+d-----        11-07-2025     16:37                callsites
+d-----        11-07-2025     16:37                camelcase
+d-----        11-07-2025     16:37                caniuse-lite
+d-----        11-07-2025     16:37                chalk
+d-----        11-07-2025     16:37                chownr
+d-----        11-07-2025     16:37                chrome-launcher
+d-----        11-07-2025     16:37                chromium-edge-launcher
+d-----        11-07-2025     16:37                ci-info
+d-----        11-07-2025     16:37                cli-cursor
+d-----        11-07-2025     16:37                cli-spinners
+d-----        11-07-2025     16:37                cliui
+d-----        11-07-2025     16:37                clone
+d-----        11-07-2025     16:37                color-convert
+d-----        11-07-2025     16:37                color-name
+d-----        11-07-2025     16:37                commander
+d-----        11-07-2025     16:37                compressible
+d-----        11-07-2025     16:37                compression
+d-----        11-07-2025     16:37                concat-map
+d-----        11-07-2025     16:37                connect
+d-----        11-07-2025     16:37                convert-source-map
+d-----        11-07-2025     16:37                core-js-compat
+d-----        11-07-2025     16:37                cosmiconfig
+d-----        11-07-2025     16:37                cross-spawn
+d-----        11-07-2025     16:37                crypto-random-string
+d-----        11-07-2025     16:37                debug
+d-----        11-07-2025     16:37                deep-extend
+d-----        11-07-2025     16:37                deepmerge
+d-----        11-07-2025     16:37                defaults
+d-----        11-07-2025     16:37                define-lazy-prop
+d-----        11-07-2025     16:37                depd
+d-----        11-07-2025     16:37                destroy
+d-----        11-07-2025     16:37                detect-libc
+d-----        11-07-2025     16:37                dotenv
+d-----        11-07-2025     16:37                dotenv-expand
+d-----        11-07-2025     16:37                eastasianwidth
+d-----        11-07-2025     16:37                ee-first
+d-----        11-07-2025     16:37                electron-to-chromium
+d-----        11-07-2025     16:37                emoji-regex
+d-----        11-07-2025     16:37                encodeurl
+d-----        11-07-2025     16:37                env-editor
+d-----        11-07-2025     16:37                error-ex
+d-----        11-07-2025     16:37                error-stack-parser
+d-----        11-07-2025     16:37                escalade
+d-----        11-07-2025     16:37                escape-html
+d-----        11-07-2025     16:37                escape-string-regexp
+d-----        11-07-2025     16:37                esprima
+d-----        11-07-2025     16:37                etag
+d-----        11-07-2025     16:37                event-target-shim
+d-----        11-07-2025     16:37                exec-async
+d-----        11-07-2025     16:37                expo
+d-----        11-07-2025     16:37                expo-asset
+d-----        11-07-2025     16:37                expo-constants
+d-----        11-07-2025     16:38                expo-file-system
+d-----        11-07-2025     16:37                expo-font
+d-----        11-07-2025     16:37                expo-keep-awake
+d-----        11-07-2025     16:37                expo-modules-autolinking
+d-----        11-07-2025     16:37                expo-modules-core
+d-----        11-07-2025     16:37                exponential-backoff
+d-----        11-07-2025     16:37                fast-json-stable-stringify
+d-----        11-07-2025     16:37                fb-watchman
+d-----        11-07-2025     16:37                fill-range
+d-----        11-07-2025     16:37                finalhandler
+d-----        11-07-2025     16:37                find-up
+d-----        11-07-2025     16:37                flow-enums-runtime
+d-----        11-07-2025     16:37                fontfaceobserver
+d-----        11-07-2025     16:37                foreground-child
+d-----        11-07-2025     16:37                freeport-async
+d-----        11-07-2025     16:37                fresh
+d-----        11-07-2025     16:37                fs.realpath
+d-----        11-07-2025     16:37                function-bind
+d-----        11-07-2025     16:37                gensync
+d-----        11-07-2025     16:37                get-caller-file
+d-----        11-07-2025     16:37                get-package-type
+d-----        11-07-2025     16:37                getenv
+d-----        11-07-2025     16:37                glob
+d-----        11-07-2025     16:37                graceful-fs
+d-----        11-07-2025     16:37                has-flag
+d-----        11-07-2025     16:37                hasown
+d-----        11-07-2025     16:37                hermes-estree
+d-----        11-07-2025     16:37                hermes-parser
+d-----        11-07-2025     16:37                hosted-git-info
+d-----        11-07-2025     16:37                http-errors
+d-----        11-07-2025     16:37                https-proxy-agent
+d-----        11-07-2025     16:37                ieee754
+d-----        11-07-2025     16:37                ignore
+d-----        11-07-2025     16:37                image-size
+d-----        11-07-2025     16:37                import-fresh
+d-----        11-07-2025     16:37                imurmurhash
+d-----        11-07-2025     16:37                inflight
+d-----        11-07-2025     16:37                inherits
+d-----        11-07-2025     16:37                ini
+d-----        11-07-2025     16:37                invariant
+d-----        11-07-2025     16:37                is-arrayish
+d-----        11-07-2025     16:37                is-core-module
+d-----        11-07-2025     16:37                is-directory
+d-----        11-07-2025     16:37                is-docker
+d-----        11-07-2025     16:37                is-fullwidth-code-point
+d-----        11-07-2025     16:37                is-number
+d-----        11-07-2025     16:37                is-wsl
+d-----        11-07-2025     16:37                isexe
+d-----        11-07-2025     16:37                istanbul-lib-coverage
+d-----        11-07-2025     16:37                istanbul-lib-instrument
+d-----        11-07-2025     16:37                jackspeak
+d-----        11-07-2025     16:37                jest-environment-node
+d-----        11-07-2025     16:37                jest-get-type
+d-----        11-07-2025     16:37                jest-haste-map
+d-----        11-07-2025     16:37                jest-message-util
+d-----        11-07-2025     16:37                jest-mock
+d-----        11-07-2025     16:37                jest-regex-util
+d-----        11-07-2025     16:37                jest-util
+d-----        11-07-2025     16:37                jest-validate
+d-----        11-07-2025     16:37                jest-worker
+d-----        11-07-2025     16:37                jimp-compact
+d-----        11-07-2025     16:37                js-tokens
+d-----        11-07-2025     16:37                js-yaml
+d-----        11-07-2025     16:37                jsc-safe-url
+d-----        11-07-2025     16:37                jsesc
+d-----        11-07-2025     16:37                json-parse-better-errors
+d-----        11-07-2025     16:37                json5
+d-----        11-07-2025     16:37                kleur
+d-----        11-07-2025     16:37                lan-network
+d-----        11-07-2025     16:37                leven
+d-----        11-07-2025     16:37                lighthouse-logger
+d-----        11-07-2025     16:37                lightningcss
+d-----        11-07-2025     16:37                lightningcss-win32-x64-msvc
+d-----        11-07-2025     16:37                lines-and-columns
+d-----        11-07-2025     16:37                locate-path
+d-----        11-07-2025     16:37                lodash.debounce
+d-----        11-07-2025     16:37                lodash.throttle
+d-----        11-07-2025     16:37                log-symbols
+d-----        11-07-2025     16:37                loose-envify
+d-----        11-07-2025     16:37                lru-cache
+d-----        11-07-2025     16:37                makeerror
+d-----        11-07-2025     16:37                marky
+d-----        11-07-2025     16:37                memoize-one
+d-----        11-07-2025     16:37                merge-stream
+d-----        11-07-2025     16:37                metro
+d-----        11-07-2025     16:37                metro-babel-transformer
+d-----        11-07-2025     16:37                metro-cache
+d-----        11-07-2025     16:37                metro-cache-key
+d-----        11-07-2025     16:37                metro-config
+d-----        11-07-2025     16:37                metro-core
+d-----        11-07-2025     16:37                metro-file-map
+d-----        11-07-2025     16:37                metro-minify-terser
+d-----        11-07-2025     16:37                metro-resolver
+d-----        11-07-2025     16:37                metro-runtime
+d-----        11-07-2025     16:37                metro-source-map
+d-----        11-07-2025     16:37                metro-symbolicate
+d-----        11-07-2025     16:37                metro-transform-plugins
+d-----        11-07-2025     16:37                metro-transform-worker
+d-----        11-07-2025     16:37                micromatch
+d-----        11-07-2025     16:37                mime
+d-----        11-07-2025     16:37                mime-db
+d-----        11-07-2025     16:37                mime-types
+d-----        11-07-2025     16:37                mimic-fn
+d-----        11-07-2025     16:37                minimatch
+d-----        11-07-2025     16:37                minimist
+d-----        11-07-2025     16:37                minipass
+d-----        11-07-2025     16:37                minizlib
+d-----        11-07-2025     16:37                mkdirp
+d-----        11-07-2025     16:37                ms
+d-----        11-07-2025     16:37                mz
+d-----        11-07-2025     16:37                nanoid
+d-----        11-07-2025     16:37                negotiator
+d-----        11-07-2025     16:37                nested-error-stacks
+d-----        11-07-2025     16:37                node-forge
+d-----        11-07-2025     16:37                node-int64
+d-----        11-07-2025     16:37                node-releases
+d-----        11-07-2025     16:37                normalize-path
+d-----        11-07-2025     16:37                npm-package-arg
+d-----        11-07-2025     16:37                nullthrows
+d-----        11-07-2025     16:37                ob1
+d-----        11-07-2025     16:37                object-assign
+d-----        11-07-2025     16:37                on-finished
+d-----        11-07-2025     16:37                on-headers
+d-----        11-07-2025     16:37                once
+d-----        11-07-2025     16:37                onetime
+d-----        11-07-2025     16:37                open
+d-----        11-07-2025     16:37                ora
+d-----        11-07-2025     16:37                p-limit
+d-----        11-07-2025     16:37                p-locate
+d-----        11-07-2025     16:37                p-try
+d-----        11-07-2025     16:37                package-json-from-dist
+d-----        11-07-2025     16:37                parse-json
+d-----        11-07-2025     16:37                parse-png
+d-----        11-07-2025     16:37                parseurl
+d-----        11-07-2025     16:37                path-exists
+d-----        11-07-2025     16:37                path-is-absolute
+d-----        11-07-2025     16:37                path-key
+d-----        11-07-2025     16:37                path-parse
+d-----        11-07-2025     16:37                path-scurry
+d-----        11-07-2025     16:37                picocolors
+d-----        11-07-2025     16:37                picomatch
+d-----        11-07-2025     16:37                pirates
+d-----        11-07-2025     16:37                plist
+d-----        11-07-2025     16:37                pngjs
+d-----        11-07-2025     16:37                postcss
+d-----        11-07-2025     16:37                pretty-bytes
+d-----        11-07-2025     16:37                pretty-format
+d-----        11-07-2025     16:37                proc-log
+d-----        11-07-2025     16:37                progress
+d-----        11-07-2025     16:37                promise
+d-----        11-07-2025     16:37                prompts
+d-----        11-07-2025     16:37                punycode
+d-----        11-07-2025     16:37                qrcode-terminal
+d-----        11-07-2025     16:37                queue
+d-----        11-07-2025     16:37                range-parser
+d-----        11-07-2025     16:37                rc
+d-----        11-07-2025     16:37                react
+d-----        11-07-2025     16:40                react-devtools-core
+d-----        11-07-2025     16:37                react-is
+d-----        11-07-2025     16:52                react-native
+d-----        11-07-2025     16:37                react-native-edge-to-edge
+d-----        11-07-2025     16:37                react-refresh
+d-----        11-07-2025     16:37                regenerate
+d-----        11-07-2025     16:37                regenerate-unicode-properties
+d-----        11-07-2025     16:37                regenerator-runtime
+d-----        11-07-2025     16:37                regexpu-core
+d-----        11-07-2025     16:37                regjsgen
+d-----        11-07-2025     16:37                regjsparser
+d-----        11-07-2025     16:37                require-directory
+d-----        11-07-2025     16:37                require-from-string
+d-----        11-07-2025     16:37                requireg
+d-----        11-07-2025     16:37                resolve
+d-----        11-07-2025     16:37                resolve-from
+d-----        11-07-2025     16:37                resolve-workspace-root
+d-----        11-07-2025     16:37                resolve.exports
+d-----        11-07-2025     16:37                restore-cursor
+d-----        11-07-2025     16:37                rimraf
+d-----        11-07-2025     16:37                safe-buffer
+d-----        11-07-2025     16:37                sax
+d-----        11-07-2025     16:37                scheduler
+d-----        11-07-2025     16:37                semver
+d-----        11-07-2025     16:37                send
+d-----        11-07-2025     16:37                serialize-error
+d-----        11-07-2025     16:37                serve-static
+d-----        11-07-2025     16:37                setprototypeof
+d-----        11-07-2025     16:37                shebang-command
+d-----        11-07-2025     16:37                shebang-regex
+d-----        11-07-2025     16:37                shell-quote
+d-----        11-07-2025     16:37                signal-exit
+d-----        11-07-2025     16:37                simple-plist
+d-----        11-07-2025     16:37                sisteransi
+d-----        11-07-2025     16:37                slash
+d-----        11-07-2025     16:37                slugify
+d-----        11-07-2025     16:37                source-map
+d-----        11-07-2025     16:37                source-map-js
+d-----        11-07-2025     16:37                source-map-support
+d-----        11-07-2025     16:37                sprintf-js
+d-----        11-07-2025     16:37                stack-utils
+d-----        11-07-2025     16:37                stackframe
+d-----        11-07-2025     16:37                stacktrace-parser
+d-----        11-07-2025     16:37                statuses
+d-----        11-07-2025     16:37                stream-buffers
+d-----        11-07-2025     16:37                string-width
+d-----        11-07-2025     16:37                string-width-cjs
+d-----        11-07-2025     16:37                strip-ansi
+d-----        11-07-2025     16:37                strip-ansi-cjs
+d-----        11-07-2025     16:37                strip-json-comments
+d-----        11-07-2025     16:37                structured-headers
+d-----        11-07-2025     16:37                sucrase
+d-----        11-07-2025     16:37                supports-color
+d-----        11-07-2025     16:37                supports-hyperlinks
+d-----        11-07-2025     16:37                supports-preserve-symlinks-flag
+d-----        11-07-2025     16:37                tar
+d-----        11-07-2025     16:37                temp-dir
+d-----        11-07-2025     16:37                terminal-link
+d-----        11-07-2025     16:37                terser
+d-----        11-07-2025     16:37                test-exclude
+d-----        11-07-2025     16:37                thenify
+d-----        11-07-2025     16:37                thenify-all
+d-----        11-07-2025     16:37                throat
+d-----        11-07-2025     16:37                tmpl
+d-----        11-07-2025     16:37                to-regex-range
+d-----        11-07-2025     16:37                toidentifier
+d-----        11-07-2025     16:37                ts-interface-checker
+d-----        11-07-2025     16:37                type-detect
+d-----        11-07-2025     16:37                type-fest
+d-----        11-07-2025     16:37                undici
+d-----        11-07-2025     16:37                undici-types
+d-----        11-07-2025     16:37                unicode-canonical-property-names-ecmascript
+d-----        11-07-2025     16:37                unicode-match-property-ecmascript
+d-----        11-07-2025     16:37                unicode-match-property-value-ecmascript
+d-----        11-07-2025     16:37                unicode-property-aliases-ecmascript
+d-----        11-07-2025     16:37                unique-string
+d-----        11-07-2025     16:37                unpipe
+d-----        11-07-2025     16:37                update-browserslist-db
+d-----        11-07-2025     16:37                utils-merge
+d-----        11-07-2025     16:37                uuid
+d-----        11-07-2025     16:37                validate-npm-package-name
+d-----        11-07-2025     16:37                vary
+d-----        11-07-2025     16:37                vlq
+d-----        11-07-2025     16:37                walker
+d-----        11-07-2025     16:37                wcwidth
+d-----        11-07-2025     16:37                webidl-conversions
+d-----        11-07-2025     16:37                whatwg-fetch
+d-----        11-07-2025     16:37                whatwg-url-without-unicode
+d-----        11-07-2025     16:37                which
+d-----        11-07-2025     16:37                wonka
+d-----        11-07-2025     16:37                wrap-ansi
+d-----        11-07-2025     16:37                wrap-ansi-cjs
+d-----        11-07-2025     16:37                wrappy
+d-----        11-07-2025     16:37                write-file-atomic
+d-----        11-07-2025     16:37                ws
+d-----        11-07-2025     16:37                xcode
+d-----        11-07-2025     16:37                xml2js
+d-----        11-07-2025     16:37                xmlbuilder
+d-----        11-07-2025     16:37                y18n
+d-----        11-07-2025     16:37                yallist
+d-----        11-07-2025     16:37                yargs
+d-----        11-07-2025     16:37                yargs-parser
+d-----        11-07-2025     16:37                yocto-queue
+-a----        11-07-2025     16:52         308405 .package-lock.json
+
+
+PS C:\Users\amole\node_modules> cd ..
+PS C:\Users\amole> cd C:\Users\amole\.cache\
+PS C:\Users\amole\.cache> dir
+
+
+    Directory: C:\Users\amole\.cache
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04-07-2025     19:49                gem
+
+
+PS C:\Users\amole\.cache> node -h
+Usage: node [options] [ script.js ] [arguments]
+       node inspect [options] [ script.js | host:port ] [arguments]
+
+Options:
+  -                                   script read from stdin (default if no file name is
+                                      provided, interactive mode if a tty)
+  --                                  indicate the end of node options
+  --abort-on-uncaught-exception       aborting instead of exiting causes a core file to
+                                      be generated for analysis
+  --allow-addons                      allow use of addons when any permissions are set
+  --allow-child-process               allow use of child process when any permissions are
+                                      set
+  --allow-fs-read=...                 allow permissions to read the filesystem
+  --allow-fs-write=...                allow permissions to write in the filesystem
+  --allow-wasi                        allow wasi when any permissions are set
+  --allow-worker                      allow worker threads when any permissions are set
+  --build-snapshot                    Generate a snapshot blob when the process exits.
+  --build-snapshot-config=...         Generate a snapshot blob when the process exits
+                                      using aJSON configuration in the specified path.
+  -c, --check                         syntax check script without executing
+  --completion-bash                   print source-able bash completion script
+  -C, --conditions=...                additional user conditions for conditional exports
+                                      and imports
+  --cpu-prof                          Start the V8 CPU profiler on start up, and write
+                                      the CPU profile to disk before exit. If
+                                      --cpu-prof-dir is not specified, write the profile
+                                      to the current working directory.
+  --cpu-prof-dir=...                  Directory where the V8 profiles generated by
+                                      --cpu-prof will be placed. Does not affect --prof.
+  --cpu-prof-interval=...             specified sampling interval in microseconds for the
+                                      V8 CPU profile generated with --cpu-prof. (default:
+                                      1000)
+  --cpu-prof-name=...                 specified file name of the V8 CPU profile generated
+                                      with --cpu-prof
+  --diagnostic-dir=...                set dir for all output files (default: current
+                                      working directory)
+  --disable-proto=...                 disable Object.prototype.__proto__
+  --disable-warning=...               silence specific process warnings
+  --disable-wasm-trap-handler         Disable trap-handler-based WebAssembly bound
+                                      checks. V8 will insert inline bound checks when
+                                      compiling WebAssembly which may slow down
+                                      performance.
+  --disallow-code-generation-from-strings
+                                      disallow eval and friends
+  --dns-result-order=...              set default value of verbatim in dns.lookup.
+                                      Options are 'ipv4first' (IPv4 addresses are placed
+                                      before IPv6 addresses) 'ipv6first' (IPv6 addresses
+                                      are placed before IPv4 addresses) 'verbatim'
+                                      (addresses are in the order the DNS resolver
+                                      returned)
+  --enable-etw-stack-walking          provides heap data to ETW Windows native tracing
+  --enable-fips                       enable FIPS crypto at startup
+  --enable-source-maps                Source Map V3 support for stack traces
+  --entry-url                         Treat the entrypoint as a URL
+  --env-file=...                      set environment variables from supplied file
+  --env-file-if-exists=...            set environment variables from supplied file
+  -e, --eval=...                      evaluate script
+  --experimental-async-context-frame  Improve AsyncLocalStorage performance with
+                                      AsyncContextFrame
+  --experimental-default-type=...     set module system to use by default
+  --experimental-eventsource          experimental EventSource API
+  --experimental-import-meta-resolve  experimental ES Module import.meta.resolve()
+                                      parentURL support
+  --loader, --experimental-loader=... use the specified module as a custom loader
+  --experimental-network-inspection   experimental network inspection support
+  --experimental-permission           enable the permission system
+  --experimental-print-required-tla   Print pending top-level await. If
+                                      --experimental-require-module is true, evaluate
+                                      asynchronous graphs loaded by `require()` but do
+                                      not run the microtasks, in order to to find and
+                                      print top-level await in the graph
+  --experimental-require-module       Allow loading explicit ES Modules in require().
+  --experimental-sea-config=...       Generate a blob that can be embedded into the
+                                      single executable application
+  --experimental-sqlite               experimental node:sqlite module
+  --experimental-strip-types          Experimental type-stripping for TypeScript files.
+  --experimental-test-coverage        enable code coverage in the test runner
+  --experimental-test-isolation=...   configures the type of test isolation used in the
+                                      test runner
+  --experimental-test-module-mocks    enable module mocking in the test runner
+  --experimental-test-snapshots       enable snapshot testing in the test runner
+  --experimental-transform-types      enable transformation of TypeScript-onlysyntax into
+                                      JavaScript code
+  --experimental-vm-modules           experimental ES Module support in vm module
+  --experimental-wasm-modules         experimental ES Module support for webassembly
+                                      modules
+  --experimental-webstorage           experimental Web Storage API
+  --expose-gc                         expose gc extension
+  --force-context-aware               disable loading non-context-aware addons
+  --force-fips                        force FIPS crypto (cannot be disabled)
+  --force-node-api-uncaught-exceptions-policy
+                                      enforces 'uncaughtException' event on Node API
+                                      asynchronous callbacks
+  --frozen-intrinsics                 experimental frozen intrinsics support
+  --heap-prof                         Start the V8 heap profiler on start up, and write
+                                      the heap profile to disk before exit. If
+                                      --heap-prof-dir is not specified, write the profile
+                                      to the current working directory.
+  --heap-prof-dir=...                 Directory where the V8 heap profiles generated by
+                                      --heap-prof will be placed.
+  --heap-prof-interval=...            specified sampling interval in bytes for the V8
+                                      heap profile generated with --heap-prof. (default:
+                                      512 * 1024)
+  --heap-prof-name=...                specified file name of the V8 heap profile
+                                      generated with --heap-prof
+  --heapsnapshot-near-heap-limit=...  Generate heap snapshots whenever V8 is approaching
+                                      the heap limit. No more than the specified number
+                                      of heap snapshots will be generated.
+  --heapsnapshot-signal=...           Generate heap snapshot on specified signal
+  -h, --help                          print node command line options (currently set)
+  --huge-max-old-generation-size      increase default maximum heap size on machines with
+                                      16GB memory or more
+  --icu-data-dir=...                  set ICU data load path to dir (overrides
+                                      NODE_ICU_DATA) (note: linked-in ICU data is
+                                      present)
+  --import=...                        ES module to preload (option can be repeated)
+  --input-type=...                    set module type for string input
+  --insecure-http-parser              use an insecure HTTP parser that accepts invalid
+                                      HTTP headers
+  --inspect[=[host:]port]             activate inspector on host:port (default:
+                                      127.0.0.1:9229)
+  --inspect-brk[=[host:]port]         activate inspector on host:port and break at start
+                                      of user script
+  --debug-port, --inspect-port=[host:]port
+                                      set host:port for inspector
+  --inspect-publish-uid=...           comma separated list of destinations for inspector
+                                      uid(default: stderr,http)
+  --inspect-wait[=[host:]port]        activate inspector on host:port and wait for
+                                      debugger to be attached
+  -i, --interactive                   always enter the REPL even if stdin does not appear
+                                      to be a terminal
+  --interpreted-frames-native-stack   help system profilers to translate JavaScript
+                                      interpreted frames
+  --jitless                           disable runtime allocation of executable memory
+  --localstorage-file=...             file used to persist localStorage data
+  --max-http-header-size=...          set the maximum size of HTTP headers (default:
+                                      16384 (16KB))
+  --network-family-autoselection-attempt-timeout=...
+                                      Sets the default value for the network family
+                                      autoselection attempt timeout.
+  --no-addons                         disable loading native addons
+  --no-deprecation                    silence deprecation warnings
+  --no-experimental-detect-module     when ambiguous modules fail to evaluate because
+                                      they contain ES module syntax, try again to
+                                      evaluate them as ES modules
+  --no-experimental-fetch             experimental Fetch API
+  --no-experimental-global-customevent
+                                      expose experimental CustomEvent on the global scope
+  --no-experimental-global-navigator  expose experimental Navigator API on the global
+                                      scope
+  --no-experimental-global-webcrypto  expose experimental Web Crypto API on the global
+                                      scope
+  --no-experimental-repl-await        experimental await keyword support in REPL
+  --no-experimental-websocket         experimental WebSocket API
+  --no-extra-info-on-fatal-exception  hide extra information on fatal exception that
+                                      causes exit
+  --no-force-async-hooks-checks       disable checks for async_hooks
+  --no-global-search-paths            disable global module search paths
+  --enable-network-family-autoselection, --no-network-family-autoselection
+                                      Disable network address family autodetection
+                                      algorithm
+  --no-warnings                       silence all process warnings
+  --node-memory-debug                 Run with extra debug checks for memory leaks in
+                                      Node.js itself
+  --openssl-config=...                load OpenSSL configuration from the specified file
+                                      (overrides OPENSSL_CONF)
+  --openssl-legacy-provider           enable OpenSSL 3.0 legacy provider
+  --openssl-shared-config             enable OpenSSL shared configuration
+  --pending-deprecation               emit pending deprecation warnings
+  --preserve-symlinks                 preserve symbolic links when resolving
+  --preserve-symlinks-main            preserve symbolic links when resolving the main
+                                      module
+  -p, --print [...]                   evaluate script and print result
+  --prof                              Generate V8 profiler output.
+  --prof-process                      process V8 profiler output generated using --prof
+  --redirect-warnings=...             write warnings to file instead of stderr
+  --report-compact                    output compact single-line JSON
+  --report-directory, --report-dir=...
+                                      define custom report pathname. (default: current
+                                      working directory)
+  --report-exclude-network            exclude network interface diagnostics. (default:
+                                      false)
+  --report-filename=...               define custom report file name. (default:
+                                      YYYYMMDD.HHMMSS.PID.SEQUENCE#.txt)
+  --report-on-fatalerror              generate diagnostic report on fatal (internal)
+                                      errors
+  --report-on-signal                  generate diagnostic report upon receiving signals
+  --report-signal=...                 causes diagnostic report to be produced on provided
+                                      signal, unsupported in Windows. (default: SIGUSR2)
+  --report-uncaught-exception         generate diagnostic report on uncaught exceptions
+  -r, --require=...                   CommonJS module to preload (option can be repeated)
+  --run=...                           Run a script specified in package.json
+  --secure-heap=...                   total size of the OpenSSL secure heap
+  --secure-heap-min=...               minimum allocation size from the OpenSSL secure
+                                      heap
+  --snapshot-blob=...                 Path to the snapshot blob that's either the result
+                                      of snapshotbuilding, or the blob that is used to
+                                      restore the application state
+  --test                              launch test runner on startup
+  --test-concurrency=...              specify test runner concurrency
+  --test-coverage-branches=...        the branch coverage minimum threshold
+  --test-coverage-exclude=...         exclude files from coverage report that match this
+                                      glob pattern
+  --test-coverage-functions=...       the function coverage minimum threshold
+  --test-coverage-include=...         include files in coverage report that match this
+                                      glob pattern
+  --test-coverage-lines=...           the line coverage minimum threshold
+  --test-force-exit                   force test runner to exit upon completion
+  --test-name-pattern=...             run tests whose name matches this regular
+                                      expression
+  --test-only                         run tests with 'only' option set
+  --test-reporter=...                 report test output using the given reporter
+  --test-reporter-destination=...     report given reporter to the given destination
+  --test-shard=...                    run test at specific shard
+  --test-skip-pattern=...             run tests whose name do not match this regular
+                                      expression
+  --test-timeout=...                  specify test runner timeout
+  --test-update-snapshots             regenerate test snapshots
+  --throw-deprecation                 throw an exception on deprecations
+  --title=...                         the process title to use on startup
+  --tls-cipher-list=...               use an alternative default TLS cipher list
+  --tls-keylog=...                    log TLS decryption keys to named file for traffic
+                                      analysis
+  --tls-max-v1.2                      set default TLS maximum to TLSv1.2 (default:
+                                      TLSv1.3)
+  --tls-max-v1.3                      set default TLS maximum to TLSv1.3 (default:
+                                      TLSv1.3)
+  --tls-min-v1.0                      set default TLS minimum to TLSv1.0 (default:
+                                      TLSv1.2)
+  --tls-min-v1.1                      set default TLS minimum to TLSv1.1 (default:
+                                      TLSv1.2)
+  --tls-min-v1.2                      set default TLS minimum to TLSv1.2 (default:
+                                      TLSv1.2)
+  --tls-min-v1.3                      set default TLS minimum to TLSv1.3 (default:
+                                      TLSv1.2)
+  --trace-atomics-wait                (deprecated) trace Atomics.wait() operations
+  --trace-deprecation                 show stack traces on deprecations
+  --trace-event-categories=...        comma separated list of trace event categories to
+                                      record
+  --trace-event-file-pattern=...      Template string specifying the filepath for the
+                                      trace-events data, it supports ${rotation} and
+                                      ${pid}.
+  --trace-exit                        show stack trace when an environment exits
+  --trace-promises                    show stack traces on promise initialization and
+                                      resolution
+  --trace-sigint                      enable printing JavaScript stacktrace on SIGINT
+  --trace-sync-io                     show stack trace when use of sync IO is detected
+                                      after the first tick
+  --trace-tls                         prints TLS packet trace information to stderr
+  --trace-uncaught                    show stack traces for the `throw` behind uncaught
+                                      exceptions
+  --trace-warnings                    show stack traces on process warnings
+  --track-heap-objects                track heap object allocations for heap snapshots
+  --unhandled-rejections=...          define unhandled rejections behavior. Options are
+                                      'strict' (always raise an error), 'throw' (raise an
+                                      error unless 'unhandledRejection' hook is set),
+                                      'warn' (log a warning), 'none' (silence warnings),
+                                      'warn-with-error-code' (log a warning and set exit
+                                      code 1 unless 'unhandledRejection' hook is set).
+                                      (default: throw)
+  --use-bundled-ca                    use bundled CA store (default)
+  --use-largepages=...                Map the Node.js static code to large pages. Options
+                                      are 'off' (the default value, meaning do not map),
+                                      'on' (map and ignore failure, reporting it to
+                                      stderr), or 'silent' (map and silently ignore
+                                      failure)
+  --use-openssl-ca                    use OpenSSL's default CA store
+  --v8-options                        print V8 command line options
+  --v8-pool-size=...                  set V8's thread pool size
+  -v, --version                       print Node.js version
+  --watch                             run in watch mode
+  --watch-path=...                    path to watch
+  --watch-preserve-output             preserve outputs on watch mode restart
+  --zero-fill-buffers                 automatically zero-fill all newly allocated Buffer
+                                      and SlowBuffer instances
+
+Environment variables:
+FORCE_COLOR                   when set to 'true', 1, 2, 3, or an empty string
+                              causes NO_COLOR and NODE_DISABLE_COLORS to be
+                              ignored.
+NO_COLOR                      Alias for NODE_DISABLE_COLORS
+NODE_DEBUG                    ','-separated list of core modules that should
+                              print debug information
+NODE_DEBUG_NATIVE             ','-separated list of C++ core debug categories
+                              that should print debug output
+NODE_DISABLE_COLORS           set to 1 to disable colors in the REPL
+NODE_EXTRA_CA_CERTS           path to additional CA certificates file. Only read
+                              once during process startup.
+NODE_NO_WARNINGS              set to 1 to silence process warnings
+NODE_PATH                     ';'-separated list of directories prefixed to the
+                              module search path
+NODE_PENDING_DEPRECATION      set to 1 to emit pending deprecation warnings
+NODE_PENDING_PIPE_INSTANCES   set the number of pending pipe instance handles on
+                              Windows
+NODE_PRESERVE_SYMLINKS        set to 1 to preserve symbolic links when resolving
+                              and caching modules
+NODE_REDIRECT_WARNINGS        write warnings to path instead of stderr
+NODE_REPL_EXTERNAL_MODULE     path to a Node.js module which will be loaded in
+                              place of the built-in REPL
+NODE_REPL_HISTORY             path to the persistent REPL history file
+NODE_SKIP_PLATFORM_CHECK      set to 1 to skip the check for a supported platform
+                              during Node.js startup
+NODE_TLS_REJECT_UNAUTHORIZED  set to 0 to disable TLS certificate validation
+NODE_V8_COVERAGE              directory to output v8 coverage JSON to
+TZ                            specify the timezone configuration
+UV_THREADPOOL_SIZE            sets the number of threads used in libuv's
+                              threadpool
+
+Documentation can be found at https://nodejs.org/
+PS C:\Users\amole\.cache> npm -h
+npm <command>
+
+Usage:
+
+npm install        install all the dependencies in your project
+npm install <foo>  add the <foo> dependency to your project
+npm test           run this project's tests
+npm run <foo>      run the script named <foo>
+npm <command> -h   quick help on <command>
+npm -l             display usage info for all commands
+npm help <term>    search for help on <term> (in a browser)
+npm help npm       more involved overview (in a browser)
+
+All commands:
+
+    access, adduser, audit, bugs, cache, ci, completion,
+    config, dedupe, deprecate, diff, dist-tag, docs, doctor,
+    edit, exec, explain, explore, find-dupes, fund, get, help,
+    help-search, hook, init, install, install-ci-test,
+    install-test, link, ll, login, logout, ls, org, outdated,
+    owner, pack, ping, pkg, prefix, profile, prune, publish,
+    query, rebuild, repo, restart, root, run-script, sbom,
+    search, set, shrinkwrap, star, stars, start, stop, team,
+    test, token, uninstall, unpublish, unstar, update, version,
+    view, whoami
+
+Specify configs in the ini-formatted file:
+    C:\Users\amole\.npmrc
+or on the command line via: npm <command> --key=value
+
+More configuration info: npm help config
+Configuration fields: npm help 7 config
+
+npm@10.9.0 C:\Program Files\nodejs\node_modules\npm
+PS C:\Users\amole\.cache> npm cache
+npm error code EUSAGE
+npm error
+npm error Manipulates packages cache
+npm error
+npm error Usage:
+npm error npm cache add <package-spec>
+npm error npm cache clean [<key>]
+npm error npm cache ls [<name>@<version>]
+npm error npm cache verify
+npm error
+npm error Options:
+npm error [--cache <cache>]
+npm error
+npm error Run "npm help cache" for more info
+npm error A complete log of this run can be found in: C:\Users\amole\AppData\Local\npm-cache\_logs\2025-07-26T16_19_11_980Z-debug-0.log
+PS C:\Users\amole\.cache> npm cache -h
+Manipulates packages cache
+
+Usage:
+npm cache add <package-spec>
+npm cache clean [<key>]
+npm cache ls [<name>@<version>]
+npm cache verify
+
+Options:
+[--cache <cache>]
+
+Run "npm help cache" for more info
+PS C:\Users\amole\.cache> npm cache clean
+npm error As of npm@5, the npm cache self-heals from corruption issues
+npm error   by treating integrity mismatches as cache misses.  As a result,
+npm error   data extracted from the cache is guaranteed to be valid.  If you
+npm error   want to make sure everything is consistent, use `npm cache verify`
+npm error   instead.  Deleting the cache can only make npm go slower, and is
+npm error   not likely to correct any problems you may be encountering!
+npm error
+npm error   On the other hand, if you're debugging an issue with the installer,
+npm error   or race conditions that depend on the timing of writing to an empty
+npm error   cache, you can use `npm install --cache /tmp/empty-cache` to use a
+npm error   temporary cache instead of nuking the actual one.
+npm error
+npm error   If you're sure you want to delete the entire cache, rerun this command
+npm error   with --force.
+npm error A complete log of this run can be found in: C:\Users\amole\AppData\Local\npm-cache\_logs\2025-07-26T16_19_39_286Z-debug-0.log
+PS C:\Users\amole\.cache> cd ..
+PS C:\Users\amole> cd .\Documents\code\scripts2
+PS C:\Users\amole\Documents\code\scripts2> cd .git
+PS C:\Users\amole\Documents\code\scripts2\.git> cd imfo
+cd : Cannot find path 'C:\Users\amole\Documents\code\scripts2\.git\imfo' because it does not exist.
+At line:1 char:1
++ cd imfo
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\amole\...ipts2\.git\imfo:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\amole\Documents\code\scripts2\.git> cd info
+PS C:\Users\amole\Documents\code\scripts2\.git\info> dir
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\.git\info
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        15-07-2025     20:49            240 exclude
+
+
+PS C:\Users\amole\Documents\code\scripts2\.git\info> code .\exclude
+PS C:\Users\amole\Documents\code\scripts2\.git\info> cd ..
+PS C:\Users\amole\Documents\code\scripts2\.git> cd ..
+PS C:\Users\amole\Documents\code\scripts2> cd .\posts-mgr\
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add -n .
+add 'posts-mgr/mgr.js'
+add 'posts-mgr/server.js'
+add 'posts-mgr/package-lock.json'
+add 'posts-mgr/package.json'
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add .
+warning: in the working copy of 'posts-mgr/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'posts-mgr/package.json', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git commit -m "Require working, walk dir working, dirs are gettinglisted."
+[master 039af0b] Require working, walk dir working, dirs are getting listed.
+ 5 files changed, 63 insertions(+), 5 deletions(-)
+ rename posts-mgr/{mgr.html => mgr2.html} (100%)
+ create mode 100644 posts-mgr/package-lock.json
+ create mode 100644 posts-mgr/package.json
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add -n .
+add 'posts-mgr/urls/01.txt'
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git add .
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git commit -m "Added urls."
+[master 55075f1] Added urls.
+ 1 file changed, 55 insertions(+)
+ create mode 100644 posts-mgr/urls/01.txt
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git push
+Enter passphrase for key '/c/Users/amole/.ssh/id_ed25519':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.43 KiB | 1.43 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:amol10/scripts2.git
+   5942aaf..55075f1  master -> master
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr>
