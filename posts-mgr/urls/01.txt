@@ -1,0 +1,55 @@
+Tabs
+html - How to get local folder contents using JavaScript - Stack Overflow
+https://stackoverflow.com/questions/41768701/how-to-get-local-folder-contents-using-javascript
+Filesystem & FileWriter API | Can I use... Support tables for HTML5, CSS3, etc
+https://caniuse.com/filesystem
+Cross Browser Testing on 3000+ Real Mobiles & Browsers | BrowserStack
+https://www.browserstack.com/user/try-live?ref=caniuse-source&browser=opera&category=JS+API&property=filesystem&caniuse_source=current-aligned-view&utm_source=caniuse&utm_medium=partnered&utm_campaigncode=701OW000008y9C1YAI&browser_version=117.0
+file system and file writer api - Google Search
+https://www.google.com/search?client=opera&q=file+system+and+file+writer+api&sourceid=opera&ie=UTF-8&oe=UTF-8
+Node.js File System Module
+https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+script tag - Google Search
+https://www.google.com/search?client=opera&q=script+tag&sourceid=opera&ie=UTF-8&oe=UTF-8
+Posts Manager
+file:///C:/Users/amole/Documents/code/scripts2/posts-mgr/mgr.html
+js create object - Google Search
+https://www.google.com/search?client=opera&q=js+create+object&sourceid=opera&ie=UTF-8&oe=UTF-8
+Settings
+opera://config/
+About Opera
+opera://about/
+FileSystemEntry - Web APIs | MDN
+https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry
+js opera list dir files - Google Search
+https://www.google.com/search?client=opera&q=js+opera+list+dir+files&sourceid=opera&ie=UTF-8&oe=UTF-8
+Node.js Get Started
+https://www.w3schools.com/nodejs/nodejs_get_started.asp
+localhost:8080
+http://localhost:8080/
+JavaScript Modules
+https://www.w3schools.com/js/js_modules.asp
+import - JavaScript | MDN
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+File system | Node.js v24.4.1 Documentation
+https://nodejs.org/api/fs.html
+javascript - require is not defined? Node.js - Stack Overflow
+https://stackoverflow.com/questions/31931614/require-is-not-defined-node-js
+Download RequireJS
+https://requirejs.org/docs/download.html
+Creating a package.json file | npm Docs
+https://docs.npmjs.com/creating-a-package-json-file
+node init command - Google Search
+https://www.google.com/search?client=opera&q=node+init+command&sourceid=opera&ie=UTF-8&oe=UTF-8
+Speed Dial
+opera://startpageshared/
+RequireJS
+https://requirejs.org/
+fs readdir - Google Search
+https://www.google.com/search?client=opera&q=fs+readdir&sourceid=opera&ie=UTF-8&oe=UTF-8
+Path | Node.js v24.4.1 Documentation
+https://nodejs.org/api/path.html#pathbasenamepath-suffix
+How to get the file name from a full path using JavaScript? - Stack Overflow
+https://stackoverflow.com/questions/423376/how-to-get-the-file-name-from-a-full-path-using-javascript
+scripts2/posts-mgr at master · amol10/scripts2
+https://github.com/amol10/scripts2/tree/master/posts-mgr
