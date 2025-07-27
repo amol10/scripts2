@@ -1,0 +1,9 @@
+https://www.oracle.com/java/technologies/downloads/#jdk24-windows
+https://stackoverflow.com/questions/7130850/how-can-i-move-all-git-content-one-level-up-in-the-folder-hierarchy
+https://superuser.com/questions/1050326/git-mv-returns-bad-source-in-powershell
+https://stackoverflow.com/questions/71975219/how-to-specify-multiple-file-types-to-exclude-when-deleting-files-in-powershell
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_foreach?view=powershell-7.5
+https://stackoverflow.com/questions/4009154/powershell-foreach-piping-confusion
+https://learn.microsoft.com/en-us/search/?view=azure-pipelines&terms=powershell%20cmdlets
+https://www.google.com/search?q=powershell+command+taskkill&client=opera&hs=0TR&sca_esv=10340ae6763877df&ei=MTKGaNnrGt-wwcsPt_aCmQo&oq=powershell+cmdlet+task&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnBvd2Vyc2hlbGwgY21kbGV0IHRhc2sqAggCMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYhgMYigUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRIi0JQ_wdYihdwAXgAkAEAmAGGAqABtBCqAQMyLTm4AQPIAQD4AQGYAgagAr4JwgIKEAAYsAMY1gQYR8ICChAAGIAEGEMYigXCAgUQABiABMICBhAAGA0YHsICCBAAGAgYDRgemAMAiAYBkAYIkgcFMS4wLjWgB79FsgcDMi01uAe4CcIHCTAuMi4zLjAuMcgHKQ&sclient=gws-wiz-serp
+https://www.google.com/search?client=opera&q=Get-PSSession&sourceid=opera&ie=UTF-8&oe=UTF-8

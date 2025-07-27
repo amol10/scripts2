@@ -1,0 +1,39 @@
+I wrote a script yesterday, it is incomplete. The idea is to make some kind of html based blog posts manager, it will have a web page as UI and a small database as backend.
+
+Today, I am going to continue on that, but, in a different way. Yesterday, I wrote the code in JS, today, I am going to translate that to Java.
+
+I have had limited exposure to Java. So, this might be slow.
+
+Let me start by checking if I have JDK installed, probably I don't have it.
+
+I don't have it.
+
+Now, let me download it.
+
+I have started the download, this might take a minute. In the meantime, let me open the code from last night.
+
+I have to rearrange the dir a little, this will include git related commands.
+
+There seems to be some issue with the 'git rm' command, let me do this after I start the installation of the JDK.
+
+The JDK installation is done.
+
+Looks like git and Windows PS/cmd shell don't work together very well. I might have to write a script to achieve this.
+
+Let me do this.
+
+So, this is done, with the PS one liner: '> git mv (Get-ChildItem -Exclude java,node) node'.
+
+This is a little bit off from the task at hand. So, I am going to go ahead a little bit still further, and, commit to it, as a separate task, by finishing it off with a blog post.
+
+The blog post has been written.
+
+I am going to take a break.
+
+I am going to continue now.
+
+Now, that I am off a little, there something I need to check which has come up in my mind. There is some PS cmdlet related to task. Let me check on the Internet for it.
+
+I could not really find much there, except for a command, 'taskkill'. I found one cmdlet of interest, 'Get-PSSession' which could be useful for storing the logs of the PS sessions. More on it later.
+
+I am going to stop now, and, continue the task of translating the JS code to Java code later.

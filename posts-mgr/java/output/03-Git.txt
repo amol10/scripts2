@@ -1,0 +1,334 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\amole> cd .\Documents\code\scripts2\posts-mgr\
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git mv (Get-ChildItem *) .\node
+fatal: source directory is empty, source=posts-mgr/java, destination=posts-mgr/node/java
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> dir
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        27-07-2025     18:47                node
+d-----        26-07-2025     21:45                node_modules
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude node
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        26-07-2025     21:45                node_modules
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude node java
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude node|java
+Usage: java [java options...] <application> [application arguments...]
+
+Where <application> is one of:
+  <mainclass>                to execute the main method of a compiled main class
+  -jar <jarfile>.jar         to execute the main class of a JAR archive
+  -m <module>[/<mainclass>]  to execute the main class of a module
+  <sourcefile>.java          to compile and execute a source-file program
+
+Where key java options include:
+  --class-path <class path>
+    where <class path> is a list of directories and JAR archives to search for class files, separated by ";"
+  --module-path <module path>
+    where <module path> is a list of directories and JAR archives to search for modules, separated by ";"
+  -version
+    to print product version to the error stream and exit
+
+For additional help on usage:           java --help
+For an interactive Java environment:    jshell
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude "node|java"
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        27-07-2025     18:47                node
+d-----        26-07-2025     21:45                node_modules
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude node -Exclude java
+Get-ChildItem : Cannot bind parameter because parameter 'Exclude' is specified more than once. To provide multiple
+values to parameters that can accept multiple values, use the array syntax. For example, "-parameter
+value1,value2,value3".
+At line:1 char:29
++ Get-ChildItem -Exclude node -Exclude java
++                             ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : ParameterAlreadyBound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude "(node|java)"
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        27-07-2025     18:47                node
+d-----        26-07-2025     21:45                node_modules
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude node,java
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-07-2025     21:45                node_modules
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git mv (Get-ChildItem -Exclude java,node) node
+fatal: source directory is empty, source=posts-mgr/node_modules, destination=posts-mgr/node/node_modules
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $i { $i }
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $i { echo $i }
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+WriteHost : The term 'WriteHost' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:49
++ Get-ChildItem -Exclude java,node | ForEach $i { WriteHost $i }
++                                                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (WriteHost:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $i { Write-Host $i }
+
+
+
+
+
+
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $_ { Write-Host $_ }
+C:\Users\amole\Documents\code\scripts2\posts-mgr\node_modules
+C:\Users\amole\Documents\code\scripts2\posts-mgr\output
+C:\Users\amole\Documents\code\scripts2\posts-mgr\urls
+C:\Users\amole\Documents\code\scripts2\posts-mgr\mgr.js
+C:\Users\amole\Documents\code\scripts2\posts-mgr\mgr2.html
+C:\Users\amole\Documents\code\scripts2\posts-mgr\package-lock.json
+C:\Users\amole\Documents\code\scripts2\posts-mgr\package.json
+C:\Users\amole\Documents\code\scripts2\posts-mgr\server.js
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> Get-ChildItem -Exclude java,node | ForEach $_ { git mv $_ .\node }
+fatal: source directory is empty, source=posts-mgr/node_modules, destination=posts-mgr/node/node_modules
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> dir
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        27-07-2025     19:11                node
+d-----        26-07-2025     21:45                node_modules
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> dir node
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr\node
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-07-2025     22:39                output
+d-----        26-07-2025     22:36                urls
+-a----        26-07-2025     22:25           1178 mgr.js
+-a----        26-07-2025     20:50            175 mgr2.html
+-a----        26-07-2025     21:45            687 package-lock.json
+-a----        26-07-2025     21:45            308 package.json
+-a----        26-07-2025     21:39            244 server.js
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> dir .\node_modules\
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr\node_modules
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-07-2025     21:45                .bin
+d-----        26-07-2025     21:45                requirejs
+-a----        26-07-2025     21:45            531 .package-lock.json
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> mv .\node_modules\ node
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> dir
+
+
+    Directory: C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        27-07-2025     18:47                java
+d-----        27-07-2025     19:11                node
+
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr>
+>> ^C
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git astatus
+git: 'astatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    mgr.js -> node/mgr.js
+        renamed:    mgr2.html -> node/mgr2.html
+        renamed:    output/01.txt -> node/output/01.txt
+        renamed:    output/02.txt -> node/output/02.txt
+        renamed:    package-lock.json -> node/package-lock.json
+        renamed:    package.json -> node/package.json
+        renamed:    server.js -> node/server.js
+        renamed:    urls/01.txt -> node/urls/01.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../ffmpeg-trim-multiple/config.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../image-dl/output.jpg
+
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git commit -m "Moved files to node dir."
+[master e0d7f7e] Moved files to node dir.
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ rename posts-mgr/{ => node}/mgr.js (100%)
+ rename posts-mgr/{ => node}/mgr2.html (100%)
+ rename posts-mgr/{ => node}/output/01.txt (100%)
+ rename posts-mgr/{ => node}/output/02.txt (100%)
+ rename posts-mgr/{ => node}/package-lock.json (100%)
+ rename posts-mgr/{ => node}/package.json (100%)
+ rename posts-mgr/{ => node}/server.js (100%)
+ rename posts-mgr/{ => node}/urls/01.txt (100%)
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr> git push
+Enter passphrase for key '/c/Users/amole/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:amol10/scripts2.git
+   05eb489..e0d7f7e  master -> master
+PS C:\Users\amole\Documents\code\scripts2\posts-mgr>

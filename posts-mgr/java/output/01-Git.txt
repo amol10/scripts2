@@ -1,0 +1,155 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\amole>cd Documents\code\scripts2\posts-mgr
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+26-07-2025  22:39    <DIR>          .
+26-07-2025  20:47    <DIR>          ..
+26-07-2025  22:25             1,178 mgr.js
+26-07-2025  20:50               175 mgr2.html
+26-07-2025  21:45    <DIR>          node_modules
+26-07-2025  22:39    <DIR>          output
+26-07-2025  21:45               687 package-lock.json
+26-07-2025  21:45               308 package.json
+26-07-2025  21:39               244 server.js
+26-07-2025  22:36    <DIR>          urls
+               5 File(s)          2,592 bytes
+               5 Dir(s)  668,551,135,232 bytes free
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>md node
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>md java
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv *.* node
+fatal: bad source, source=posts-mgr/*.*, destination=posts-mgr/node/*.*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv .\*.* node
+fatal: bad source, source=posts-mgr/*.*, destination=posts-mgr/node/*.*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv .\* node
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv -h
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --[no-]verbose    be verbose
+    -n, --[no-]dry-run    dry run
+    -f, --[no-]force      force move/rename even if target exists
+    -k                    skip move/rename errors
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>cd ..
+
+C:\Users\amole\Documents\code\scripts2>git mv posts-mgr\* posts-mgr\node
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2>git mv posts-mgr\* posts-mgr\node\
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2>git mv posts-mgr\* posts-mgr\node\ -k
+
+C:\Users\amole\Documents\code\scripts2>cd posts-mgr
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+27-07-2025  18:47    <DIR>          .
+26-07-2025  20:47    <DIR>          ..
+27-07-2025  18:47    <DIR>          java
+26-07-2025  22:25             1,178 mgr.js
+26-07-2025  20:50               175 mgr2.html
+27-07-2025  18:47    <DIR>          node
+26-07-2025  21:45    <DIR>          node_modules
+26-07-2025  22:39    <DIR>          output
+26-07-2025  21:45               687 package-lock.json
+26-07-2025  21:45               308 package.json
+26-07-2025  21:39               244 server.js
+26-07-2025  22:36    <DIR>          urls
+               5 File(s)          2,592 bytes
+               7 Dir(s)  668,528,898,048 bytes free
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>dir node
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\posts-mgr\node
+
+27-07-2025  18:47    <DIR>          .
+27-07-2025  18:47    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  668,525,522,944 bytes free
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>java
+'java' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git cp * node
+git: 'cp' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        fsck
+        gc
+        grep
+        help
+        mv
+        p4
+        rm
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git cp * node
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv * node
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv * node -v
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv * .\node -v
+fatal: bad source, source=posts-mgr/*, destination=posts-mgr/node/*
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv (Get-ChildItem *) .\node -v
+fatal: bad source, source=posts-mgr/(Get-ChildItem, destination=posts-mgr/node/(Get-ChildItem
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\posts-mgr
+
+27-07-2025  18:47    <DIR>          .
+26-07-2025  20:47    <DIR>          ..
+27-07-2025  18:47    <DIR>          java
+26-07-2025  22:25             1,178 mgr.js
+26-07-2025  20:50               175 mgr2.html
+27-07-2025  18:47    <DIR>          node
+26-07-2025  21:45    <DIR>          node_modules
+26-07-2025  22:39    <DIR>          output
+26-07-2025  21:45               687 package-lock.json
+26-07-2025  21:45               308 package.json
+26-07-2025  21:39               244 server.js
+26-07-2025  22:36    <DIR>          urls
+               5 File(s)          2,592 bytes
+               7 Dir(s)  663,853,506,560 bytes free
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>git mv (Get-ChildItem -Exclude java,node) node -v
+error: unknown switch `E'
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --[no-]verbose    be verbose
+    -n, --[no-]dry-run    dry run
+    -f, --[no-]force      force move/rename even if target exists
+    -k                    skip move/rename errors
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+
+
+C:\Users\amole\Documents\code\scripts2\posts-mgr>
