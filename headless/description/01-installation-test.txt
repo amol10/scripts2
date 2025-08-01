@@ -1,0 +1,24 @@
+I am going to visit an old idea, that of automating certain tasks that are done in a browser, like, uploading a file, etc. This can be done using some kind of programming language, like, Python, with some kind of http library. Or, not. Some websites use JavaScript to make asynchronous requests, etc. This might need a concept like, headless browser, to automate. I am going to try it now. If it fails, I might go for a keystroke based approach, in which, one sends keystrokes to applications, in order to perform certain tasks.
+
+Headless browser first.
+
+I have searched the Internet. I found a list. I am looking at a tool called 'Playwright', for automating using a headless browser. It is documented as based on TypeScript, I want to learn the language, so I am going to go with this tool.
+
+This tool is 'npm' based. I am going to install it.
+
+I have installed the package via npm. I have initialized a new project with it, using, 'npm init playwright@latest'. It is in progress, it is installing 'browsers'. I suppose it is the support for browsers, for how many of them, remains to be seen.
+
+Looks like it is going to take some time. Let me get started on the code in the meantime.
+
+It is installing browsers, it has done some installation related to Chromium, Firefox. There is something related to webkit in progress. How many browsers is it going to install? Let me see if I can find it out.
+
+I tried to search a little, by looking into the node_modules dir, a package.json, a dir wide string search. It did not work. In the meantime, the installation has been done.
+
+Let me see the next steps.
+
+I ran the test command, it did not run my code. I have put the test code file in the tests dir now. Let's see.
+
+That did not work, so, I put the code in the generated examples file. It worked, for one browser, webkit, it has failed for the other two browsers. I'll continue later.
+
+I am going to stop now.
+ 

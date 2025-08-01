@@ -1,0 +1,25 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\amole> cd .\Documents\code\scripts2\headless\node_modules\
+PS C:\Users\amole\Documents\code\scripts2\headless\node_modules> Select-String -Pattern "browsers" .
+Select-String : The file C:\Users\amole\Documents\code\scripts2\headless\node_modules cannot be read: Access to the
+path 'C:\Users\amole\Documents\code\scripts2\headless\node_modules' is denied.
+At line:1 char:1
++ Select-String -Pattern "browsers" .
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+    + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\headless\node_modules> Select-String -Pattern "browsers" *.*
+Select-String : The file C:\Users\amole\Documents\code\scripts2\headless\node_modules\.bin cannot be read: Access to
+the path 'C:\Users\amole\Documents\code\scripts2\headless\node_modules\.bin' is denied.
+At line:1 char:1
++ Select-String -Pattern "browsers" *.*
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+    + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+
+PS C:\Users\amole\Documents\code\scripts2\headless\node_modules> Select-String -Pattern "browsers" *.*

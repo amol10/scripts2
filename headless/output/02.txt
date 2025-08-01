@@ -1,0 +1,146 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\amole>cd Documents\code\scripts2\headless
+
+C:\Users\amole\Documents\code\scripts2\headless>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\headless
+
+01-08-2025  19:55    <DIR>          .
+01-08-2025  19:41    <DIR>          ..
+01-08-2025  19:44                97 .gitignore
+01-08-2025  19:44    <DIR>          node_modules
+01-08-2025  19:44             2,969 package-lock.json
+01-08-2025  19:44               253 package.json
+01-08-2025  19:44             2,178 playwright.config.ts
+01-08-2025  19:55               195 shot.ts
+01-08-2025  19:44    <DIR>          tests
+01-08-2025  19:44    <DIR>          tests-examples
+               5 File(s)          5,692 bytes
+               5 Dir(s)  637,626,880,000 bytes free
+
+C:\Users\amole\Documents\code\scripts2\headless>cd node_modules
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\headless\node_modules
+
+01-08-2025  19:44    <DIR>          .
+01-08-2025  19:55    <DIR>          ..
+01-08-2025  19:44    <DIR>          .bin
+01-08-2025  19:44             2,294 .package-lock.json
+01-08-2025  19:44    <DIR>          @playwright
+01-08-2025  19:44    <DIR>          @types
+01-08-2025  19:44    <DIR>          playwright
+01-08-2025  19:44    <DIR>          playwright-core
+01-08-2025  19:44    <DIR>          undici-types
+               1 File(s)          2,294 bytes
+               8 Dir(s)  637,624,455,168 bytes free
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules>cd playwright
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules\playwright>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\scripts2\headless\node_modules\playwright
+
+01-08-2025  19:44    <DIR>          .
+01-08-2025  19:44    <DIR>          ..
+01-08-2025  19:44               698 cli.js
+01-08-2025  19:44               636 index.d.ts
+01-08-2025  19:44               648 index.js
+01-08-2025  19:44               704 index.mjs
+01-08-2025  19:44               942 jsx-runtime.js
+01-08-2025  19:44               764 jsx-runtime.mjs
+01-08-2025  19:44    <DIR>          lib
+01-08-2025  19:44            11,601 LICENSE
+01-08-2025  19:44               254 NOTICE
+01-08-2025  19:44             1,800 package.json
+01-08-2025  19:44             8,123 README.md
+01-08-2025  19:44               673 test.d.ts
+01-08-2025  19:44               806 test.js
+01-08-2025  19:44             1,300 test.mjs
+01-08-2025  19:44           212,592 ThirdPartyNotices.txt
+01-08-2025  19:44    <DIR>          types
+              14 File(s)        241,541 bytes
+               4 Dir(s)  637,612,224,512 bytes free
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules\playwright>type package.json
+{
+  "name": "playwright",
+  "version": "1.54.2",
+  "description": "A high-level API to automate web browsers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/playwright.git"
+  },
+  "homepage": "https://playwright.dev",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./lib/common/configLoader": "./lib/common/configLoader.js",
+    "./lib/fsWatcher": "./lib/fsWatcher.js",
+    "./lib/program": "./lib/program.js",
+    "./lib/transform/babelBundle": "./lib/transform/babelBundle.js",
+    "./lib/transform/compilationCache": "./lib/transform/compilationCache.js",
+    "./lib/transform/esmLoader": "./lib/transform/esmLoader.js",
+    "./lib/transform/transform": "./lib/transform/transform.js",
+    "./lib/internalsForTest": "./lib/internalsForTest.js",
+    "./lib/plugins": "./lib/plugins/index.js",
+    "./jsx-runtime": {
+      "import": "./jsx-runtime.mjs",
+      "require": "./jsx-runtime.js",
+      "default": "./jsx-runtime.js"
+    },
+    "./lib/util": "./lib/util.js",
+    "./lib/utilsBundle": "./lib/utilsBundle.js",
+    "./types/test": {
+      "types": "./types/test.d.ts"
+    },
+    "./types/testReporter": {
+      "types": "./types/testReporter.d.ts"
+    },
+    "./test": {
+      "types": "./test.d.ts",
+      "import": "./test.mjs",
+      "require": "./test.js",
+      "default": "./test.js"
+    }
+  },
+  "bin": {
+    "playwright": "cli.js"
+  },
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "playwright-core": "1.54.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.3.2"
+  }
+}
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules\playwright>cd ..
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules>Select-String -Pattern "browsers" .
+'Select-String' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\amole\Documents\code\scripts2\headless\node_modules>
