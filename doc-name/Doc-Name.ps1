@@ -1,4 +1,4 @@
-$n = Read-Host -Prompt "Title";
+$n = Get-Clipboard;
 #echo $n;
 $n = $n.ToLower();
 #echo $n;
